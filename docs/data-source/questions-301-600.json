@@ -1,0 +1,2424 @@
+[
+  {
+    "sourceId": 301,
+    "question": "What planet is known for having the most moons?",
+    "sourceAnswer": "Saturn.",
+    "sourceImage": "846592573_2077676956247392_7433416806695421588_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 302,
+    "question": "What planet is known for its thick yellow clouds?",
+    "sourceAnswer": "Venus.",
+    "sourceImage": "846592573_2077676956247392_7433416806695421588_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 303,
+    "question": "What planet is famous for its large rings?",
+    "sourceAnswer": "Saturn.",
+    "sourceImage": "846592573_2077676956247392_7433416806695421588_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 304,
+    "question": "What planet has a day longer than its year?",
+    "sourceAnswer": "Venus.",
+    "sourceImage": "846592573_2077676956247392_7433416806695421588_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 305,
+    "question": "What galaxy contains our solar system?",
+    "sourceAnswer": "Milky Way.",
+    "sourceImage": "846592573_2077676956247392_7433416806695421588_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 306,
+    "question": "What force holds planets in orbit around the Sun?",
+    "sourceAnswer": "Gravity.",
+    "sourceImage": "846592573_2077676956247392_7433416806695421588_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 307,
+    "question": "What is the first artificial satellite launched into space?",
+    "sourceAnswer": "Sputnik 1.",
+    "sourceImage": "846592573_2077676956247392_7433416806695421588_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 308,
+    "question": "Who was the first person to walk on the Moon?",
+    "sourceAnswer": "Neil Armstrong.",
+    "sourceImage": "846592573_2077676956247392_7433416806695421588_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 309,
+    "question": "What vehicle is used to transport astronauts into space?",
+    "sourceAnswer": "Spacecraft (Rocket).",
+    "sourceImage": "846592573_2077676956247392_7433416806695421588_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 310,
+    "question": "What giant fiery ball of gas generates its own light and heat?",
+    "sourceAnswer": "Star.",
+    "sourceImage": "846592573_2077676956247392_7433416806695421588_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 311,
+    "question": "What celestial body has gravity so strong that not even light can escape?",
+    "sourceAnswer": "Black hole.",
+    "sourceImage": "846592573_2077676956247392_7433416806695421588_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 312,
+    "question": "What rocky debris orbits the Sun mostly between Mars and Jupiter?",
+    "sourceAnswer": "Asteroid.",
+    "sourceImage": "846592573_2077676956247392_7433416806695421588_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 313,
+    "question": "What is a meteor called if it hits the ground?",
+    "sourceAnswer": "Meteorite.",
+    "sourceImage": "846592573_2077676956247392_7433416806695421588_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 314,
+    "question": "What famous space telescope orbits above Earth's atmosphere?",
+    "sourceAnswer": "Hubble Space Telescope.",
+    "sourceImage": "846592573_2077676956247392_7433416806695421588_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 315,
+    "question": "What do you call a person who travels into space?",
+    "sourceAnswer": "Astronaut.",
+    "sourceImage": "846592573_2077676956247392_7433416806695421588_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 316,
+    "question": "What suit do astronauts wear outside their spacecraft?",
+    "sourceAnswer": "Spacesuit.",
+    "sourceImage": "846592573_2077676956247392_7433416806695421588_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 317,
+    "question": "What dense core remains after a massive star explodes?",
+    "sourceAnswer": "Neutron star.",
+    "sourceImage": "846592573_2077676956247392_7433416806695421588_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 318,
+    "question": "What is the boundary around a black hole where light cannot escape?",
+    "sourceAnswer": "Event horizon.",
+    "sourceImage": "846592573_2077676956247392_7433416806695421588_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 319,
+    "question": "What movement of a planet around the Sun is called?",
+    "sourceAnswer": "Revolution (Orbit).",
+    "sourceImage": "846592573_2077676956247392_7433416806695421588_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 320,
+    "question": "What is the axial tilt of Earth approximately?",
+    "sourceAnswer": "23.5 degrees.",
+    "sourceImage": "846592573_2077676956247392_7433416806695421588_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 321,
+    "question": "What phase of the Moon occurs when it is completely dark from Earth's view?",
+    "sourceAnswer": "New moon.",
+    "sourceImage": "846592573_2077676956247392_7433416806695421588_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 322,
+    "question": "What event happens when the Moon passes between the Sun and Earth?",
+    "sourceAnswer": "Solar eclipse.",
+    "sourceImage": "846592573_2077676956247392_7433416806695421588_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 323,
+    "question": "What planet is closest in size and weight to Earth?",
+    "sourceAnswer": "Venus.",
+    "sourceImage": "846592573_2077676956247392_7433416806695421588_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 324,
+    "question": "What planet has the Great Red Spot?",
+    "sourceAnswer": "Jupiter.",
+    "sourceImage": "846592573_2077676956247392_7433416806695421588_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 325,
+    "question": "What planet spins completely on its side?",
+    "sourceAnswer": "Uranus.",
+    "sourceImage": "846592573_2077676956247392_7433416806695421588_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 326,
+    "question": "What spacecraft was the first to land humans on the Moon?",
+    "sourceAnswer": "Apollo 11.",
+    "sourceImage": "846592573_2077676956247392_7433416806695421588_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 327,
+    "question": "What rover is currently exploring the surface of Mars?",
+    "sourceAnswer": "Perseverance.",
+    "sourceImage": "846592573_2077676956247392_7433416806695421588_n.jpg",
+    "reviewFlags": [
+      "Time-dependent question; multiple rovers may be exploring Mars."
+    ],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 328,
+    "question": "What is the speed of sound in air approximately?",
+    "sourceAnswer": "343 m/s.",
+    "sourceImage": "846592573_2077676956247392_7433416806695421588_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 329,
+    "question": "What unit is used for distances within our solar system, equal to Earth-Sun distance?",
+    "sourceAnswer": "Astronomical unit (AU).",
+    "sourceImage": "846592573_2077676956247392_7433416806695421588_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 330,
+    "question": "What is the region of icy bodies beyond Neptune called?",
+    "sourceAnswer": "Kuiper Belt.",
+    "sourceImage": "846592573_2077676956247392_7433416806695421588_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 331,
+    "question": "What term describes everything that exists, including all space and time?",
+    "sourceAnswer": "Universe.",
+    "sourceImage": "846961854_2638553816606471_203372956516208871_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 332,
+    "question": "What is the mysterious force causing the expansion of the universe to accelerate?",
+    "sourceAnswer": "Dark energy.",
+    "sourceImage": "846961854_2638553816606471_203372956516208871_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 333,
+    "question": "What is a system of millions or billions of stars held together by gravity called?",
+    "sourceAnswer": "Galaxy.",
+    "sourceImage": "846961854_2638553816606471_203372956516208871_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 334,
+    "question": "What term describes stars that group together to form recognizable patterns?",
+    "sourceAnswer": "Constellation.",
+    "sourceImage": "846961854_2638553816606471_203372956516208871_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 335,
+    "question": "What star helps navigation because it stays nearly fixed in the northern sky?",
+    "sourceAnswer": "Polaris (North Star).",
+    "sourceImage": "846961854_2638553816606471_203372956516208871_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 336,
+    "question": "What bright flash occurs when a large meteor explodes in the atmosphere?",
+    "sourceAnswer": "Fireball.",
+    "sourceImage": "846961854_2638553816606471_203372956516208871_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 337,
+    "question": "What rocket engine uses liquid propellants for deep space missions?",
+    "sourceAnswer": "Liquid-fuel rocket.",
+    "sourceImage": "846961854_2638553816606471_203372956516208871_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 338,
+    "question": "What was the name of the first probe to land on Mars successfully?",
+    "sourceAnswer": "Viking 1.",
+    "sourceImage": "846961854_2638553816606471_203372956516208871_n.jpg",
+    "reviewFlags": [
+      "Ambiguous successful landing: Mars 3 landed earlier but transmitted only briefly."
+    ],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 339,
+    "question": "What Chinese space station currently operates in orbit?",
+    "sourceAnswer": "Tiangong.",
+    "sourceImage": "846961854_2638553816606471_203372956516208871_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 340,
+    "question": "What private aerospace company was founded by Jeff Bezos?",
+    "sourceAnswer": "Blue Origin.",
+    "sourceImage": "846961854_2638553816606471_203372956516208871_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 341,
+    "question": "What agency is the space organization for European nations?",
+    "sourceAnswer": "ESA.",
+    "sourceImage": "846961854_2638553816606471_203372956516208871_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 342,
+    "question": "What agency is the space organization for India?",
+    "sourceAnswer": "ISRO.",
+    "sourceImage": "846961854_2638553816606471_203372956516208871_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 343,
+    "question": "What invisible shield protects Earth from solar wind and radiation?",
+    "sourceAnswer": "Magnetic field (Magnetosphere).",
+    "sourceImage": "846961854_2638553816606471_203372956516208871_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 344,
+    "question": "What is the aurora seen in the southern hemisphere called?",
+    "sourceAnswer": "Aurora Australis.",
+    "sourceImage": "846961854_2638553816606471_203372956516208871_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 345,
+    "question": "What term describes the path a spacecraft takes around a celestial body?",
+    "sourceAnswer": "Orbit.",
+    "sourceImage": "846961854_2638553816606471_203372956516208871_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 346,
+    "question": "What is the highest point of an orbit away from Earth called?",
+    "sourceAnswer": "Apogee.",
+    "sourceImage": "846961854_2638553816606471_203372956516208871_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 347,
+    "question": "What is the closest point of an orbit to the Sun called?",
+    "sourceAnswer": "Perihelion.",
+    "sourceImage": "846961854_2638553816606471_203372956516208871_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 348,
+    "question": "What type of star is our Sun currently classified as?",
+    "sourceAnswer": "Yellow dwarf.",
+    "sourceImage": "846961854_2638553816606471_203372956516208871_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 349,
+    "question": "What small, dense remnant star will the Sun become after being a red giant?",
+    "sourceAnswer": "White dwarf.",
+    "sourceImage": "846961854_2638553816606471_203372956516208871_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 350,
+    "question": "What theoretical bridge through spacetime connects distant points in the universe?",
+    "sourceAnswer": "Wormhole.",
+    "sourceImage": "846961854_2638553816606471_203372956516208871_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 351,
+    "question": "What planet is the second closest to the Sun?",
+    "sourceAnswer": "Venus.",
+    "sourceImage": "846961854_2638553816606471_203372956516208871_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 352,
+    "question": "What is the smallest planet in our solar system?",
+    "sourceAnswer": "Mercury.",
+    "sourceImage": "846961854_2638553816606471_203372956516208871_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 353,
+    "question": "What planet has the longest year in our solar system?",
+    "sourceAnswer": "Neptune.",
+    "sourceImage": "846961854_2638553816606471_203372956516208871_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 354,
+    "question": "What former planet is now classified as a dwarf planet?",
+    "sourceAnswer": "Pluto.",
+    "sourceImage": "846961854_2638553816606471_203372956516208871_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 355,
+    "question": "What is the name of our closest major galaxy neighbor?",
+    "sourceAnswer": "Andromeda.",
+    "sourceImage": "846961854_2638553816606471_203372956516208871_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 356,
+    "question": "What is the largest moon of Jupiter?",
+    "sourceAnswer": "Ganymede.",
+    "sourceImage": "846961854_2638553816606471_203372956516208871_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 357,
+    "question": "Who was the first human to travel into space?",
+    "sourceAnswer": "Yuri Gagarin.",
+    "sourceImage": "846961854_2638553816606471_203372956516208871_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 358,
+    "question": "What year did humans first land on the Moon?",
+    "sourceAnswer": "1969",
+    "sourceImage": "846961854_2638553816606471_203372956516208871_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 359,
+    "question": "What laboratory orbits Earth where astronauts live and work?",
+    "sourceAnswer": "International Space Station (ISS).",
+    "sourceImage": "846961854_2638553816606471_203372956516208871_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 360,
+    "question": "What is the closest galaxy to the Milky Way?",
+    "sourceAnswer": "Andromeda Galaxy.",
+    "sourceImage": "846961854_2638553816606471_203372956516208871_n.jpg",
+    "reviewFlags": [
+      "Source answer names the nearest major galaxy; smaller satellite galaxies are closer."
+    ],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 361,
+    "question": "What icy body with a glowing tail orbits the Sun?",
+    "sourceAnswer": "Comet.",
+    "sourceImage": "846319746_3363919643815956_1820896758381469253_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 362,
+    "question": "What is a shooting star actually called when it enters Earth's atmosphere?",
+    "sourceAnswer": "Meteor.",
+    "sourceImage": "846319746_3363919643815956_1820896758381469253_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 363,
+    "question": "What instrument is used to detect earthquakes?",
+    "sourceAnswer": "Seismograph.",
+    "sourceImage": "846319746_3363919643815956_1820896758381469253_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 364,
+    "question": "What is the study of space and celestial objects called?",
+    "sourceAnswer": "Astronomy.",
+    "sourceImage": "846319746_3363919643815956_1820896758381469253_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 365,
+    "question": "What is the term for the absence of gravity in space?",
+    "sourceAnswer": "Weightlessness (Zero gravity).",
+    "sourceImage": "846319746_3363919643815956_1820896758381469253_n.jpg",
+    "reviewFlags": [
+      "Weightlessness in orbit does not mean gravity is absent."
+    ],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 366,
+    "question": "What explosive death of a massive star is called?",
+    "sourceAnswer": "Supernova.",
+    "sourceImage": "846319746_3363919643815956_1820896758381469253_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 367,
+    "question": "What massive cloud of dust and gas in space is where stars are born?",
+    "sourceAnswer": "Nebula.",
+    "sourceImage": "846319746_3363919643815956_1820896758381469253_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 368,
+    "question": "What imaginary line passes through the North and South Poles of a planet?",
+    "sourceAnswer": "Axis.",
+    "sourceImage": "846319746_3363919643815956_1820896758381469253_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 369,
+    "question": "What movement of a planet on its own axis is called?",
+    "sourceAnswer": "Rotation.",
+    "sourceImage": "846319746_3363919643815956_1820896758381469253_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 370,
+    "question": "How many hours does it take Earth to complete one rotation?",
+    "sourceAnswer": "24 hours.",
+    "sourceImage": "846319746_3363919643815956_1820896758381469253_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 371,
+    "question": "What phase occurs when the Moon is fully illuminated?",
+    "sourceAnswer": "Full moon.",
+    "sourceImage": "846319746_3363919643815956_1820896758381469253_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 372,
+    "question": "What event happens when Earth passes between the Sun and the Moon?",
+    "sourceAnswer": "Lunar eclipse.",
+    "sourceImage": "846319746_3363919643815956_1820896758381469253_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 373,
+    "question": "What planet is the hottest in our solar system?",
+    "sourceAnswer": "Venus.",
+    "sourceImage": "846319746_3363919643815956_1820896758381469253_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 374,
+    "question": "What planet has the shortest day in the solar system?",
+    "sourceAnswer": "Jupiter.",
+    "sourceImage": "846319746_3363919643815956_1820896758381469253_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 375,
+    "question": "What planet has fierce supersonic winds of deep blue gas?",
+    "sourceAnswer": "Neptune.",
+    "sourceImage": "846319746_3363919643815956_1820896758381469253_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 376,
+    "question": "What reusable spacecraft was retired by NASA in 2011?",
+    "sourceAnswer": "Space Shuttle.",
+    "sourceImage": "846319746_3363919643815956_1820896758381469253_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 377,
+    "question": "What telescope succeeded Hubble to view the earliest galaxies?",
+    "sourceAnswer": "James Webb Space Telescope.",
+    "sourceImage": "846319746_3363919643815956_1820896758381469253_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 378,
+    "question": "What unit measures extremely long distances in space based on light travel time?",
+    "sourceAnswer": "Light-year.",
+    "sourceImage": "846319746_3363919643815956_1820896758381469253_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 379,
+    "question": "What shape are the orbits of planets around the Sun?",
+    "sourceAnswer": "Elliptical.",
+    "sourceImage": "846319746_3363919643815956_1820896758381469253_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 380,
+    "question": "What distant spherical shell of icy objects surrounds the entire solar system?",
+    "sourceAnswer": "Oort Cloud.",
+    "sourceImage": "846319746_3363919643815956_1820896758381469253_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 381,
+    "question": "What massive explosion theory explains the creation of the universe?",
+    "sourceAnswer": "Big Bang theory.",
+    "sourceImage": "846319746_3363919643815956_1820896758381469253_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 382,
+    "question": "What invisible matter makes up most of the matter in the universe?",
+    "sourceAnswer": "Dark matter.",
+    "sourceImage": "846319746_3363919643815956_1820896758381469253_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 383,
+    "question": "What shape is the Milky Way galaxy?",
+    "sourceAnswer": "Spiral.",
+    "sourceImage": "846319746_3363919643815956_1820896758381469253_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 384,
+    "question": "What famous northern constellation contains the Big Dipper?",
+    "sourceAnswer": "Ursa Major.",
+    "sourceImage": "846319746_3363919643815956_1820896758381469253_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 385,
+    "question": "What term describes the glowing trail left by a meteor?",
+    "sourceAnswer": "Shooting star.",
+    "sourceImage": "846319746_3363919643815956_1820896758381469253_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 386,
+    "question": "What instrument measures radiation and particles in space?",
+    "sourceAnswer": "Spectrometer.",
+    "sourceImage": "846319746_3363919643815956_1820896758381469253_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 387,
+    "question": "What is a vehicle sent to explore space without human crew called?",
+    "sourceAnswer": "Space probe.",
+    "sourceImage": "846319746_3363919643815956_1820896758381469253_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 388,
+    "question": "What Russian space station operated from 1986 to 2001?",
+    "sourceAnswer": "Mir.",
+    "sourceImage": "846319746_3363919643815956_1820896758381469253_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 389,
+    "question": "What private aerospace company was founded by Elon Musk?",
+    "sourceAnswer": "SpaceX.",
+    "sourceImage": "846319746_3363919643815956_1820896758381469253_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 390,
+    "question": "What agency is the national space organization of the United States?",
+    "sourceAnswer": "NASA.",
+    "sourceImage": "846319746_3363919643815956_1820896758381469253_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 391,
+    "question": "What agency is the space organization for Russia?",
+    "sourceAnswer": "Roscosmos.",
+    "sourceImage": "844996942_1636958221777355_35367862346989508_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 392,
+    "question": "What term describes the environment outside Earth's atmosphere?",
+    "sourceAnswer": "Outer space.",
+    "sourceImage": "844996942_1636958221777355_35367862346989508_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 393,
+    "question": "What colorful light display occurs in polar skies due to solar particles?",
+    "sourceAnswer": "Aurora.",
+    "sourceImage": "844996942_1636958221777355_35367862346989508_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 394,
+    "question": "What is the aurora seen in the northern hemisphere called?",
+    "sourceAnswer": "Aurora Borealis.",
+    "sourceImage": "844996942_1636958221777355_35367862346989508_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 395,
+    "question": "What maneuver uses a planet's gravity to boost a spacecraft's speed?",
+    "sourceAnswer": "Gravity assist.",
+    "sourceImage": "844996942_1636958221777355_35367862346989508_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 396,
+    "question": "What is the closest point of an orbit to Earth called?",
+    "sourceAnswer": "Perigee.",
+    "sourceImage": "844996942_1636958221777355_35367862346989508_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 397,
+    "question": "What is the farthest point of an orbit from the Sun called?",
+    "sourceAnswer": "Aphelion.",
+    "sourceImage": "844996942_1636958221777355_35367862346989508_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 398,
+    "question": "What will our Sun eventually transform into near the end of its life?",
+    "sourceAnswer": "Red giant.",
+    "sourceImage": "844996942_1636958221777355_35367862346989508_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 399,
+    "question": "What massive explosion destroys white dwarfs in binary systems?",
+    "sourceAnswer": "Type Ia supernova.",
+    "sourceImage": "844996942_1636958221777355_35367862346989508_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 400,
+    "question": "What is the study of the origin and evolution of the universe called?",
+    "sourceAnswer": "Cosmology.",
+    "sourceImage": "844996942_1636958221777355_35367862346989508_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 401,
+    "question": "What is the process of applying paint to a surface called?",
+    "sourceAnswer": "Painting.",
+    "sourceImage": "844996942_1636958221777355_35367862346989508_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 402,
+    "question": "What board do painters use to mix their colors?",
+    "sourceAnswer": "Palette.",
+    "sourceImage": "844996942_1636958221777355_35367862346989508_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 403,
+    "question": "What fabric surface is commonly used for oil and acrylic paintings?",
+    "sourceAnswer": "Canvas.",
+    "sourceImage": "844996942_1636958221777355_35367862346989508_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 404,
+    "question": "What type of paint is thick, slow-drying, and made with pigment in oil?",
+    "sourceAnswer": "Oil paint.",
+    "sourceImage": "844996942_1636958221777355_35367862346989508_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 405,
+    "question": "What fast-drying synthetic paint is popular with modern artists?",
+    "sourceAnswer": "Acrylic paint.",
+    "sourceImage": "844996942_1636958221777355_35367862346989508_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 406,
+    "question": "What drawing stick is made of colored wax or pigment?",
+    "sourceAnswer": "Crayon.",
+    "sourceImage": "844996942_1636958221777355_35367862346989508_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 407,
+    "question": "What drawing tool uses graphite wrapped in wood?",
+    "sourceAnswer": "Pencil.",
+    "sourceImage": "844996942_1636958221777355_35367862346989508_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 408,
+    "question": "What art of creating three-dimensional forms is called?",
+    "sourceAnswer": "Sculpture.",
+    "sourceImage": "844996942_1636958221777355_35367862346989508_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 409,
+    "question": "What machine spins clay to shape pots and ceramics?",
+    "sourceAnswer": "Potter's wheel.",
+    "sourceImage": "844996942_1636958221777355_35367862346989508_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 410,
+    "question": "What hard material is carved by sculptors to make statues?",
+    "sourceAnswer": "Stone (or marble).",
+    "sourceImage": "844996942_1636958221777355_35367862346989508_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 411,
+    "question": "What artwork is made by gluing various materials like paper and fabric to a surface?",
+    "sourceAnswer": "Collage.",
+    "sourceImage": "844996942_1636958221777355_35367862346989508_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 412,
+    "question": "What decorative art involves designs made of small colored glass or stone pieces?",
+    "sourceAnswer": "Mosaic.",
+    "sourceImage": "844996942_1636958221777355_35367862346989508_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 413,
+    "question": "What decorative handwriting style is considered an art form?",
+    "sourceAnswer": "Calligraphy.",
+    "sourceImage": "844996942_1636958221777355_35367862346989508_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 414,
+    "question": "Who painted \"The Starry Night\"?",
+    "sourceAnswer": "Vincent van Gogh.",
+    "sourceImage": "844996942_1636958221777355_35367862346989508_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 415,
+    "question": "What Spanish artist co-founded the Cubism movement?",
+    "sourceAnswer": "Pablo Picasso.",
+    "sourceImage": "844996942_1636958221777355_35367862346989508_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 416,
+    "question": "What French painter was a leader of the Impressionist movement?",
+    "sourceAnswer": "Claude Monet.",
+    "sourceImage": "844996942_1636958221777355_35367862346989508_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 417,
+    "question": "What Mexican artist is famous for her vibrant self-portraits?",
+    "sourceAnswer": "Frida Kahlo.",
+    "sourceImage": "844996942_1636958221777355_35367862346989508_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 418,
+    "question": "What French painter cut off part of his own ear?",
+    "sourceAnswer": "Vincent van Gogh.",
+    "sourceImage": "844996942_1636958221777355_35367862346989508_n.jpg",
+    "reviewFlags": [
+      "Source calls Vincent van Gogh French; he was Dutch."
+    ],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 419,
+    "question": "What term describes a painting of a person's face?",
+    "sourceAnswer": "Portrait.",
+    "sourceImage": "844996942_1636958221777355_35367862346989508_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 420,
+    "question": "What term describes a painting of inanimate objects like fruit or flowers?",
+    "sourceAnswer": "Still life.",
+    "sourceImage": "844996942_1636958221777355_35367862346989508_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 421,
+    "question": "What term describes a painting of an artist's own face?",
+    "sourceAnswer": "Self-portrait.",
+    "sourceImage": "848993096_1419737776306537_4215579288885196228_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 422,
+    "question": "What secondary color is made by mixing red and yellow?",
+    "sourceAnswer": "Orange.",
+    "sourceImage": "848993096_1419737776306537_4215579288885196228_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 423,
+    "question": "What secondary color is made by mixing red and blue?",
+    "sourceAnswer": "Purple.",
+    "sourceImage": "848993096_1419737776306537_4215579288885196228_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 424,
+    "question": "What color category includes red, orange, and yellow?",
+    "sourceAnswer": "Warm colors.",
+    "sourceImage": "848993096_1419737776306537_4215579288885196228_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 425,
+    "question": "What lightness or darkness of a color is called?",
+    "sourceAnswer": "Value (Tone).",
+    "sourceImage": "848993096_1419737776306537_4215579288885196228_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 426,
+    "question": "What path moving through space creates an artwork's outline?",
+    "sourceAnswer": "Line.",
+    "sourceImage": "848993096_1419737776306537_4215579288885196228_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 427,
+    "question": "What three-dimensional enclosed area has volume?",
+    "sourceAnswer": "Form.",
+    "sourceImage": "848993096_1419737776306537_4215579288885196228_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 428,
+    "question": "What arrangement of visual elements in a work of art is called?",
+    "sourceAnswer": "Composition.",
+    "sourceImage": "848993096_1419737776306537_4215579288885196228_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 429,
+    "question": "What design principle directs the viewer's eye through an artwork?",
+    "sourceAnswer": "Movement.",
+    "sourceImage": "848993096_1419737776306537_4215579288885196228_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 430,
+    "question": "What design principle repeats elements to create rhythm?",
+    "sourceAnswer": "Pattern.",
+    "sourceImage": "848993096_1419737776306537_4215579288885196228_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 431,
+    "question": "What 20th-century art movement uses geometric shapes and multiple viewpoints?",
+    "sourceAnswer": "Cubism.",
+    "sourceImage": "848993096_1419737776306537_4215579288885196228_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 432,
+    "question": "What movement emphasizes capturing light and fleeting moments?",
+    "sourceAnswer": "Impressionism.",
+    "sourceImage": "848993096_1419737776306537_4215579288885196228_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 433,
+    "question": "What art style uses elements from popular culture and advertising?",
+    "sourceAnswer": "Pop art.",
+    "sourceImage": "848993096_1419737776306537_4215579288885196228_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 434,
+    "question": "What classical European period saw a great revival of art and learning?",
+    "sourceAnswer": "The Renaissance.",
+    "sourceImage": "848993096_1419737776306537_4215579288885196228_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 435,
+    "question": "What dramatic 17th-century art style features intense contrast between light and dark?",
+    "sourceAnswer": "Baroque.",
+    "sourceImage": "848993096_1419737776306537_4215579288885196228_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 436,
+    "question": "What art style imitates classical Greek and Roman art?",
+    "sourceAnswer": "Neoclassicism.",
+    "sourceImage": "848993096_1419737776306537_4215579288885196228_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 437,
+    "question": "What style captures everyday life realistically without idealization?",
+    "sourceAnswer": "Realism.",
+    "sourceImage": "848993096_1419737776306537_4215579288885196228_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 438,
+    "question": "What abstract style uses splatters and drips of paint without recognizable objects?",
+    "sourceAnswer": "Abstract expressionism.",
+    "sourceImage": "848993096_1419737776306537_4215579288885196228_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 439,
+    "question": "What technique blurs edges smoothly between colors and tones?",
+    "sourceAnswer": "Sfumato.",
+    "sourceImage": "848993096_1419737776306537_4215579288885196228_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 440,
+    "question": "What technique scratches through a top layer of paint to reveal a lower layer?",
+    "sourceAnswer": "Sgraffito.",
+    "sourceImage": "848993096_1419737776306537_4215579288885196228_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 441,
+    "question": "What type of art uses light, sound, and space for a temporary visitor experience?",
+    "sourceAnswer": "Installation art.",
+    "sourceImage": "848993096_1419737776306537_4215579288885196228_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 442,
+    "question": "What illegal painting or drawing on public walls is called?",
+    "sourceAnswer": "Graffiti.",
+    "sourceImage": "848993096_1419737776306537_4215579288885196228_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 443,
+    "question": "What art form designs functional objects like furniture and appliances?",
+    "sourceAnswer": "Industrial design.",
+    "sourceImage": "848993096_1419737776306537_4215579288885196228_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 444,
+    "question": "Who is the person that designs buildings?",
+    "sourceAnswer": "Architect.",
+    "sourceImage": "848993096_1419737776306537_4215579288885196228_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 445,
+    "question": "What traditional Japanese art involves growing miniature trees?",
+    "sourceAnswer": "Bonsai.",
+    "sourceImage": "848993096_1419737776306537_4215579288885196228_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 446,
+    "question": "What woven textile art features pictorial designs made with colored threads?",
+    "sourceAnswer": "Tapestry.",
+    "sourceImage": "848993096_1419737776306537_4215579288885196228_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 447,
+    "question": "What decorative art involves sewing designs onto fabric with a needle?",
+    "sourceAnswer": "Embroidery.",
+    "sourceImage": "848993096_1419737776306537_4215579288885196228_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 448,
+    "question": "What art form creates jewelry using precious metals and gems?",
+    "sourceAnswer": "Goldsmithing (Jewelry design).",
+    "sourceImage": "848993096_1419737776306537_4215579288885196228_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 449,
+    "question": "What wooden mallet is used with a chisel for carving?",
+    "sourceAnswer": "Mallet.",
+    "sourceImage": "848993096_1419737776306537_4215579288885196228_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 450,
+    "question": "What protective liquid varnish is applied over a finished painting?",
+    "sourceAnswer": "Varnish.",
+    "sourceImage": "848993096_1419737776306537_4215579288885196228_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 451,
+    "question": "What tool with bristles is used for painting?",
+    "sourceAnswer": "Paintbrush.",
+    "sourceImage": "847915701_1132753012618982_2167171063143229116_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 452,
+    "question": "What wooden or metal stand supports a painter's canvas?",
+    "sourceAnswer": "Easel.",
+    "sourceImage": "847915701_1132753012618982_2167171063143229116_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 453,
+    "question": "What type of paint uses water as a solvent and dries quickly?",
+    "sourceAnswer": "Watercolor.",
+    "sourceImage": "847915701_1132753012618982_2167171063143229116_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 454,
+    "question": "What water-based paint is opaque and dries with a matte finish?",
+    "sourceAnswer": "Gouache.",
+    "sourceImage": "847915701_1132753012618982_2167171063143229116_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 455,
+    "question": "What dry drawing medium is made of compressed carbon?",
+    "sourceAnswer": "Charcoal.",
+    "sourceImage": "847915701_1132753012618982_2167171063143229116_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 456,
+    "question": "What soft chalk-like drawing material creates blended pastel effects?",
+    "sourceAnswer": "Pastel.",
+    "sourceImage": "847915701_1132753012618982_2167171063143229116_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 457,
+    "question": "What tool removes pencil marks from paper?",
+    "sourceAnswer": "Eraser.",
+    "sourceImage": "847915701_1132753012618982_2167171063143229116_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 458,
+    "question": "What soft material is molded by hand to create pottery or sculptures?",
+    "sourceAnswer": "Clay.",
+    "sourceImage": "847915701_1132753012618982_2167171063143229116_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 459,
+    "question": "What high-temperature oven is used to bake and harden clay?",
+    "sourceAnswer": "Kiln.",
+    "sourceImage": "847915701_1132753012618982_2167171063143229116_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 460,
+    "question": "What metallic material is melted and poured into molds for sculptures?",
+    "sourceAnswer": "Bronze.",
+    "sourceImage": "847915701_1132753012618982_2167171063143229116_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 461,
+    "question": "What technique uses inked blocks or plates to transfer images onto paper?",
+    "sourceAnswer": "Printmaking.",
+    "sourceImage": "847915701_1132753012618982_2167171063143229116_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 462,
+    "question": "What art form creates pictures using colored glass windows?",
+    "sourceAnswer": "Stained glass.",
+    "sourceImage": "847915701_1132753012618982_2167171063143229116_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 463,
+    "question": "Who painted The Birth of Venus?",
+    "sourceAnswer": "Sandro Botticelli.",
+    "sourceImage": "847915701_1132753012618982_2167171063143229116_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 464,
+    "question": "Who sculpted the famous marble statue of \"David\"?",
+    "sourceAnswer": "Michelangelo.",
+    "sourceImage": "847915701_1132753012618982_2167171063143229116_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 465,
+    "question": "What Dutch master painted \"The Night Watch\"?",
+    "sourceAnswer": "Rembrandt.",
+    "sourceImage": "847915701_1132753012618982_2167171063143229116_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 466,
+    "question": "What surrealist artist painted melting clocks in \"The Persistence of Memory\"?",
+    "sourceAnswer": "Salvador Dalí.",
+    "sourceImage": "847915701_1132753012618982_2167171063143229116_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 467,
+    "question": "What pop artist created colorful silk screens of Campbell's soup cans?",
+    "sourceAnswer": "Andy Warhol.",
+    "sourceImage": "847915701_1132753012618982_2167171063143229116_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 468,
+    "question": "What building houses collections of valuable artwork for public viewing?",
+    "sourceAnswer": "Art gallery (Museum).",
+    "sourceImage": "847915701_1132753012618982_2167171063143229116_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 469,
+    "question": "What term describes a painting of natural scenery like mountains or rivers?",
+    "sourceAnswer": "Landscape.",
+    "sourceImage": "847915701_1132753012618982_2167171063143229116_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 470,
+    "question": "What term describes a painting of the sea and ocean?",
+    "sourceAnswer": "Seascape.",
+    "sourceImage": "847915701_1132753012618982_2167171063143229116_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 471,
+    "question": "What primary colors cannot be made by mixing other colors?",
+    "sourceAnswer": "Red, blue, yellow.",
+    "sourceImage": "847915701_1132753012618982_2167171063143229116_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 472,
+    "question": "What secondary color is made by mixing blue and yellow?",
+    "sourceAnswer": "Green.",
+    "sourceImage": "847915701_1132753012618982_2167171063143229116_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 473,
+    "question": "What colors are opposite each other on the color wheel?",
+    "sourceAnswer": "Complementary colors.",
+    "sourceImage": "847915701_1132753012618982_2167171063143229116_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 474,
+    "question": "What color category includes blue, green, and purple?",
+    "sourceAnswer": "Cool colors.",
+    "sourceImage": "847915701_1132753012618982_2167171063143229116_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 475,
+    "question": "What surface quality or feel of an artwork is called?",
+    "sourceAnswer": "Texture.",
+    "sourceImage": "847915701_1132753012618982_2167171063143229116_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 476,
+    "question": "What enclosed two-dimensional area is defined by lines?",
+    "sourceAnswer": "Shape.",
+    "sourceImage": "847915701_1132753012618982_2167171063143229116_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 477,
+    "question": "What visual depth or distance in a painting is called?",
+    "sourceAnswer": "Perspective.",
+    "sourceImage": "847915701_1132753012618982_2167171063143229116_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 478,
+    "question": "What design principle refers to visual equality and stability?",
+    "sourceAnswer": "Balance.",
+    "sourceImage": "847915701_1132753012618982_2167171063143229116_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 479,
+    "question": "What design principle uses differences to create visual interest?",
+    "sourceAnswer": "Contrast.",
+    "sourceImage": "847915701_1132753012618982_2167171063143229116_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 480,
+    "question": "What design principle emphasizes a specific focal point?",
+    "sourceAnswer": "Emphasis.",
+    "sourceImage": "847915701_1132753012618982_2167171063143229116_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 481,
+    "question": "What art movement focuses on dream-like and irrational imagery?",
+    "sourceAnswer": "Surrealism.",
+    "sourceImage": "849097186_1238002051880100_1453230326422609347_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 482,
+    "question": "What movement features clean lines, geometric shapes, and industrial themes?",
+    "sourceAnswer": "Modern art.",
+    "sourceImage": "849097186_1238002051880100_1453230326422609347_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 483,
+    "question": "What ancient civilization is famous for wall paintings called hieroglyphics and pyramids?",
+    "sourceAnswer": "Ancient Egypt.",
+    "sourceImage": "849097186_1238002051880100_1453230326422609347_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 484,
+    "question": "What famous passenger ship sank on its maiden voyage in 1912 after hitting an iceberg?",
+    "sourceAnswer": "RMS Titanic.",
+    "sourceImage": "849097186_1238002051880100_1453230326422609347_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 485,
+    "question": "What delicate, decorative 18th-century art style followed Baroque?",
+    "sourceAnswer": "Rococo.",
+    "sourceImage": "849097186_1238002051880100_1453230326422609347_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 486,
+    "question": "What art movement focuses on intense emotion and dramatic nature scenes?",
+    "sourceAnswer": "Romanticism.",
+    "sourceImage": "849097186_1238002051880100_1453230326422609347_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 487,
+    "question": "What movement expresses internal emotional experience rather than physical reality?",
+    "sourceAnswer": "Expressionism.",
+    "sourceImage": "849097186_1238002051880100_1453230326422609347_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 488,
+    "question": "What technique applies paint thickly so it stands out from the canvas surface?",
+    "sourceAnswer": "Impasto.",
+    "sourceImage": "849097186_1238002051880100_1453230326422609347_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 489,
+    "question": "What technique uses contrasting areas of light and shadow to create volume?",
+    "sourceAnswer": "Chiaroscuro.",
+    "sourceImage": "849097186_1238002051880100_1453230326422609347_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 490,
+    "question": "What painting technique is executed on freshly laid wet plaster?",
+    "sourceAnswer": "Fresco.",
+    "sourceImage": "849097186_1238002051880100_1453230326422609347_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 491,
+    "question": "What art form involves human actions presented live to an audience?",
+    "sourceAnswer": "Performance art.",
+    "sourceImage": "849097186_1238002051880100_1453230326422609347_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 492,
+    "question": "What commercial art focuses on designing books, logos, and typography?",
+    "sourceAnswer": "Graphic design.",
+    "sourceImage": "849097186_1238002051880100_1453230326422609347_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 493,
+    "question": "What art form designs buildings and physical structures?",
+    "sourceAnswer": "Architecture.",
+    "sourceImage": "849097186_1238002051880100_1453230326422609347_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 494,
+    "question": "What traditional Japanese art form involves folding paper?",
+    "sourceAnswer": "Origami.",
+    "sourceImage": "849097186_1238002051880100_1453230326422609347_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 495,
+    "question": "What traditional Chinese art uses ink brushes on silk or paper?",
+    "sourceAnswer": "Chinese brush painting.",
+    "sourceImage": "849097186_1238002051880100_1453230326422609347_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 496,
+    "question": "What art form creates objects from molten glass shaped with a blowpipe?",
+    "sourceAnswer": "Glassblowing.",
+    "sourceImage": "849097186_1238002051880100_1453230326422609347_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 497,
+    "question": "What fabric art sews small pieces of cloth together into a larger blanket?",
+    "sourceAnswer": "Quilting.",
+    "sourceImage": "849097186_1238002051880100_1453230326422609347_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 498,
+    "question": "What tool is used by sculptors to chip away at stone or wood?",
+    "sourceAnswer": "Chisel.",
+    "sourceImage": "849097186_1238002051880100_1453230326422609347_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 499,
+    "question": "What sharp blade tool is used for paper cutting and precise craft work?",
+    "sourceAnswer": "Craft knife (X-Acto knife).",
+    "sourceImage": "849097186_1238002051880100_1453230326422609347_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 500,
+    "question": "What protective clothing do artists wear to keep paint off their clothes?",
+    "sourceAnswer": "Apron (Smock).",
+    "sourceImage": "849097186_1238002051880100_1453230326422609347_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 501,
+    "question": "What is the study of past events called?",
+    "sourceAnswer": "History.",
+    "sourceImage": "849097186_1238002051880100_1453230326422609347_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 502,
+    "question": "What ancient civilization developed the first known written code of laws?",
+    "sourceAnswer": "Babylonians.",
+    "sourceImage": "849097186_1238002051880100_1453230326422609347_n.jpg",
+    "reviewFlags": [
+      "Source says first known code of laws; the Sumerian Code of Ur-Nammu predates Babylonian Hammurabi."
+    ],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 503,
+    "question": "What ancient civilization developed along the Tigris and Euphrates rivers?",
+    "sourceAnswer": "Mesopotamia.",
+    "sourceImage": "849097186_1238002051880100_1453230326422609347_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 504,
+    "question": "What ancient civilization is famous for creating democracy?",
+    "sourceAnswer": "Ancient Greece.",
+    "sourceImage": "849097186_1238002051880100_1453230326422609347_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 505,
+    "question": "What ancient civilization built Machu Picchu in the Andes?",
+    "sourceAnswer": "The Incas.",
+    "sourceImage": "849097186_1238002051880100_1453230326422609347_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 506,
+    "question": "What empire was ruled by Montezuma before the Spanish conquest?",
+    "sourceAnswer": "Aztec Empire.",
+    "sourceImage": "849097186_1238002051880100_1453230326422609347_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 507,
+    "question": "What artistic technique creates the illusion of depth on a flat surface?",
+    "sourceAnswer": "Perspective.",
+    "sourceImage": "849097186_1238002051880100_1453230326422609347_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 508,
+    "question": "Who painted the Mona Lisa during the Renaissance?",
+    "sourceAnswer": "Leonardo da Vinci.",
+    "sourceImage": "849097186_1238002051880100_1453230326422609347_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 509,
+    "question": "What invention by Johannes Gutenberg revolutionized book production?",
+    "sourceAnswer": "Printing press.",
+    "sourceImage": "849097186_1238002051880100_1453230326422609347_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 510,
+    "question": "What Portuguese explorer led the first expedition to circumnavigate the globe?",
+    "sourceAnswer": "Ferdinand Magellan.",
+    "sourceImage": "849097186_1238002051880100_1453230326422609347_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 511,
+    "question": "What major political revolution began in France in 1789?",
+    "sourceAnswer": "French Revolution.",
+    "sourceImage": "842716346_4826401267588273_2492324043354237561_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 512,
+    "question": "What French military leader crowned himself Emperor in 1804?",
+    "sourceAnswer": "Napoleon Bonaparte.",
+    "sourceImage": "842716346_4826401267588273_2492324043354237561_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 513,
+    "question": "What industrial period shifted society from agriculture to manufacturing?",
+    "sourceAnswer": "Industrial Revolution.",
+    "sourceImage": "842716346_4826401267588273_2492324043354237561_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 514,
+    "question": "What power source drove early industrial machinery and locomotives?",
+    "sourceAnswer": "Steam engine.",
+    "sourceImage": "842716346_4826401267588273_2492324043354237561_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 515,
+    "question": "What war fought from 1861 to 1865 divided the United States?",
+    "sourceAnswer": "American Civil War.",
+    "sourceImage": "842716346_4826401267588273_2492324043354237561_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 516,
+    "question": "What US document declared freedom for slaves in Confederate states?",
+    "sourceAnswer": "Emancipation Proclamation.",
+    "sourceImage": "842716346_4826401267588273_2492324043354237561_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 517,
+    "question": "What event triggered the start of World War I in 1914?",
+    "sourceAnswer": "Assassination of Archduke Franz Ferdinand.",
+    "sourceImage": "842716346_4826401267588273_2492324043354237561_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 518,
+    "question": "What global economic crisis began with the US stock market crash in 1929?",
+    "sourceAnswer": "The Great Depression.",
+    "sourceImage": "842716346_4826401267588273_2492324043354237561_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 519,
+    "question": "Who was the leader of Nazi Germany during World War II?",
+    "sourceAnswer": "Adolf Hitler.",
+    "sourceImage": "842716346_4826401267588273_2492324043354237561_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 520,
+    "question": "Who was the US President who ordered atomic bombs dropped on Japan?",
+    "sourceAnswer": "Harry S. Truman.",
+    "sourceImage": "842716346_4826401267588273_2492324043354237561_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 521,
+    "question": "What international peacekeeping organization was founded after World War II in 1945?",
+    "sourceAnswer": "United Nations.",
+    "sourceImage": "842716346_4826401267588273_2492324043354237561_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 522,
+    "question": "What wall divided East and West Berlin from 1961 to 1989?",
+    "sourceAnswer": "Berlin Wall.",
+    "sourceImage": "842716346_4826401267588273_2492324043354237561_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 523,
+    "question": "Who was the first woman to travel into space?",
+    "sourceAnswer": "Valentina Tereshkova.",
+    "sourceImage": "842716346_4826401267588273_2492324043354237561_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 524,
+    "question": "What year did the Soviet Union officially dissolve?",
+    "sourceAnswer": "1991",
+    "sourceImage": "842716346_4826401267588273_2492324043354237561_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 525,
+    "question": "Who was elected as South Africa's first black president after ending apartheid?",
+    "sourceAnswer": "Nelson Mandela.",
+    "sourceImage": "842716346_4826401267588273_2492324043354237561_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 526,
+    "question": "What ancient Greek city-state was famous for its fierce military warriors?",
+    "sourceAnswer": "Sparta.",
+    "sourceImage": "842716346_4826401267588273_2492324043354237561_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 527,
+    "question": "What Carthaginian general famously crossed the Alps with elephants to attack Rome?",
+    "sourceAnswer": "Hannibal.",
+    "sourceImage": "842716346_4826401267588273_2492324043354237561_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 528,
+    "question": "Who was the first Emperor of the Roman Empire?",
+    "sourceAnswer": "Augustus Caesar.",
+    "sourceImage": "842716346_4826401267588273_2492324043354237561_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 529,
+    "question": "What massive nomadic empire was founded by Genghis Khan in the 13th century?",
+    "sourceAnswer": "Mongol Empire.",
+    "sourceImage": "842716346_4826401267588273_2492324043354237561_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 530,
+    "question": "What devastating pandemic swept through Europe in the 14th century?",
+    "sourceAnswer": "The Black Death (Plubonic Plague).",
+    "sourceImage": "842716346_4826401267588273_2492324043354237561_n.jpg",
+    "reviewFlags": [
+      "Printed synonym appears misspelled 'Plubonic Plague'; preserve source text."
+    ],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 531,
+    "question": "What queen ruled England during its \"Golden Age\" and the defeat of the Spanish Armada?",
+    "sourceAnswer": "Elizabeth I.",
+    "sourceImage": "842716346_4826401267588273_2492324043354237561_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 532,
+    "question": "What political event in 1688 established parliamentary supremacy in England?",
+    "sourceAnswer": "Glorious Revolution.",
+    "sourceImage": "842716346_4826401267588273_2492324043354237561_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 533,
+    "question": "What war fought from 1754 to 1763 was a global conflict between Britain and France?",
+    "sourceAnswer": "Seven Years' War.",
+    "sourceImage": "842716346_4826401267588273_2492324043354237561_n.jpg",
+    "reviewFlags": [
+      "Dates 1754–1763 describe the French and Indian War; Seven Years' War generally dates 1756–1763."
+    ],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 534,
+    "question": "What document officially declared American independence on July 4, 1776?",
+    "sourceAnswer": "Declaration of Independence.",
+    "sourceImage": "842716346_4826401267588273_2492324043354237561_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 535,
+    "question": "Who was the commander of the Continental Army and the first US President?",
+    "sourceAnswer": "George Washington.",
+    "sourceImage": "842716346_4826401267588273_2492324043354237561_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 536,
+    "question": "What conflict fought from 1853 to 1856 pitted Russia against an alliance of France, Britain, and the Ottoman Empire?",
+    "sourceAnswer": "Crimean War.",
+    "sourceImage": "842716346_4826401267588273_2492324043354237561_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 537,
+    "question": "What 1869 engineering project connected the Mediterranean Sea to the Red Sea?",
+    "sourceAnswer": "Suez Canal.",
+    "sourceImage": "842716346_4826401267588273_2492324043354237561_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 538,
+    "question": "What revolution in 1917 overthrew the Russian Tsar and established communist rule?",
+    "sourceAnswer": "Russian Revolution (Bolshevik Revolution).",
+    "sourceImage": "842716346_4826401267588273_2492324043354237561_n.jpg",
+    "reviewFlags": [
+      "Question conflates February overthrow of Tsar with October Bolshevik seizure of power."
+    ],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 539,
+    "question": "Who succeeded Vladimir Lenin as the dictator of the Soviet Union?",
+    "sourceAnswer": "Joseph Stalin.",
+    "sourceImage": "842716346_4826401267588273_2492324043354237561_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 540,
+    "question": "What military alliance was formed by Western nations in 1949 to counter the Soviet Union?",
+    "sourceAnswer": "NATO.",
+    "sourceImage": "842716346_4826401267588273_2492324043354237561_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 541,
+    "question": "What conflict fought from 1950 to 1953 divided the Korean Peninsula?",
+    "sourceAnswer": "Korean War.",
+    "sourceImage": "843404375_1631041185215508_2767421407666481852_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 542,
+    "question": "What 1962 tense confrontation brought the US and Soviet Union close to nuclear war?",
+    "sourceAnswer": "Cuban Missile Crisis.",
+    "sourceImage": "843404375_1631041185215508_2767421407666481852_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 543,
+    "question": "Who was the US President during the Cuban Missile Crisis?",
+    "sourceAnswer": "John F. Kennedy.",
+    "sourceImage": "843404375_1631041185215508_2767421407666481852_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 544,
+    "question": "What nuclear disaster occurred in the Soviet Union in April 1986?",
+    "sourceAnswer": "Chernobyl disaster.",
+    "sourceImage": "843404375_1631041185215508_2767421407666481852_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 545,
+    "question": "What international terrorist attacks on the US on September 11, 2001 changed global security?",
+    "sourceAnswer": "9/11 attacks.",
+    "sourceImage": "843404375_1631041185215508_2767421407666481852_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 546,
+    "question": "What ancient Mesopotamian writing system used wedge-shaped marks on clay tablets?",
+    "sourceAnswer": "Cuneiform.",
+    "sourceImage": "843404375_1631041185215508_2767421407666481852_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 547,
+    "question": "What stone discovered in 1799 helped decode Egyptian hieroglyphics?",
+    "sourceAnswer": "Rosetta Stone.",
+    "sourceImage": "843404375_1631041185215508_2767421407666481852_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 548,
+    "question": "What king of Macedonia conquered a massive empire stretching to India?",
+    "sourceAnswer": "Alexander the Great.",
+    "sourceImage": "843404375_1631041185215508_2767421407666481852_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 549,
+    "question": "What emperor legalized Christianity in the Roman Empire in 313 AD?",
+    "sourceAnswer": "Constantine the Great.",
+    "sourceImage": "843404375_1631041185215508_2767421407666481852_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 550,
+    "question": "What Frankish king was crowned Emperor of the Romans in 800 AD?",
+    "sourceAnswer": "Charlemagne.",
+    "sourceImage": "843404375_1631041185215508_2767421407666481852_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 551,
+    "question": "What invention around 3500 BC marked the beginning of recorded history?",
+    "sourceAnswer": "Writing (cuneiform).",
+    "sourceImage": "843404375_1631041185215508_2767421407666481852_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 552,
+    "question": "What river was the center of Ancient Egyptian civilization?",
+    "sourceAnswer": "Nile River.",
+    "sourceImage": "843404375_1631041185215508_2767421407666481852_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 553,
+    "question": "What ancient empire built the Colosseum in Rome?",
+    "sourceAnswer": "Roman Empire.",
+    "sourceImage": "843404375_1631041185215508_2767421407666481852_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 554,
+    "question": "What ancient Chinese structure was built to protect against invasions?",
+    "sourceAnswer": "Great Wall of China.",
+    "sourceImage": "843404375_1631041185215508_2767421407666481852_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 555,
+    "question": "What ancient civilization built massive step pyramids in Mesoamerica?",
+    "sourceAnswer": "The Mayans.",
+    "sourceImage": "843404375_1631041185215508_2767421407666481852_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 556,
+    "question": "What historic trade route connected Asia, the Middle East, and Europe?",
+    "sourceAnswer": "Silk Road.",
+    "sourceImage": "843404375_1631041185215508_2767421407666481852_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 557,
+    "question": "In which European country did the Renaissance begin?",
+    "sourceAnswer": "Italy.",
+    "sourceImage": "843404375_1631041185215508_2767421407666481852_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 558,
+    "question": "What German monk started the Protestant Reformation in 1517?",
+    "sourceAnswer": "Martin Luther.",
+    "sourceImage": "843404375_1631041185215508_2767421407666481852_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 559,
+    "question": "What explorer reached the Americas in 1492 under the Spanish flag?",
+    "sourceAnswer": "Christopher Columbus.",
+    "sourceImage": "843404375_1631041185215508_2767421407666481852_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 560,
+    "question": "What 18th-century movement emphasized reason, science, and individualism?",
+    "sourceAnswer": "The Enlightenment.",
+    "sourceImage": "843404375_1631041185215508_2767421407666481852_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 561,
+    "question": "What fortress was stormed on July 14, 1789, starting the French Revolution?",
+    "sourceAnswer": "The Bastille.",
+    "sourceImage": "843404375_1631041185215508_2767421407666481852_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 562,
+    "question": "At what famous 1815 battle was Napoleon finally defeated?",
+    "sourceAnswer": "Battle of Waterloo.",
+    "sourceImage": "843404375_1631041185215508_2767421407666481852_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 563,
+    "question": "In which country did the Industrial Revolution begin?",
+    "sourceAnswer": "Great Britain.",
+    "sourceImage": "843404375_1631041185215508_2767421407666481852_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 564,
+    "question": "Who improved the steam engine, making it commercially practical?",
+    "sourceAnswer": "James Watt.",
+    "sourceImage": "843404375_1631041185215508_2767421407666481852_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 565,
+    "question": "Who was the US President during the American Civil War?",
+    "sourceAnswer": "Abraham Lincoln.",
+    "sourceImage": "843404375_1631041185215508_2767421407666481852_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 566,
+    "question": "What global conflict lasted from 1914 to 1918?",
+    "sourceAnswer": "World War I.",
+    "sourceImage": "843404375_1631041185215508_2767421407666481852_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 567,
+    "question": "What treaty officially ended World War I in 1919?",
+    "sourceAnswer": "Treaty of Versailles.",
+    "sourceImage": "843404375_1631041185215508_2767421407666481852_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 568,
+    "question": "What global conflict lasted from 1939 to 1945?",
+    "sourceAnswer": "World War II.",
+    "sourceImage": "843404375_1631041185215508_2767421407666481852_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 569,
+    "question": "Who was the Prime Minister of the UK during most of World War II?",
+    "sourceAnswer": "Winston Churchill.",
+    "sourceImage": "843404375_1631041185215508_2767421407666481852_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 570,
+    "question": "What two Japanese cities were hit by atomic bombs in 1945?",
+    "sourceAnswer": "Hiroshima and Nagasaki.",
+    "sourceImage": "843404375_1631041185215508_2767421407666481852_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 571,
+    "question": "What geopolitical tension between the US and the USSR followed World War II?",
+    "sourceAnswer": "The Cold War.",
+    "sourceImage": "842420558_1147038891084693_894600476372864010_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 572,
+    "question": "What was the first space station launched by the Soviet Union?",
+    "sourceAnswer": "Salyut 1.",
+    "sourceImage": "842420558_1147038891084693_894600476372864010_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 573,
+    "question": "What Soviet leader introduced political and economic reforms called glasnost and perestroika?",
+    "sourceAnswer": "Mikhail Gorbachev.",
+    "sourceImage": "842420558_1147038891084693_894600476372864010_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 574,
+    "question": "What African American civil rights leader gave the \"I Have a Dream\" speech?",
+    "sourceAnswer": "Martin Luther King Jr.",
+    "sourceImage": "842420558_1147038891084693_894600476372864010_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 575,
+    "question": "What Indian leader led a non-violent movement for independence from British rule?",
+    "sourceAnswer": "Mahatma Gandhi.",
+    "sourceImage": "842420558_1147038891084693_894600476372864010_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 576,
+    "question": "What ancient Greek city-state was the birthplace of philosophy and art?",
+    "sourceAnswer": "Athens.",
+    "sourceImage": "842420558_1147038891084693_894600476372864010_n.jpg",
+    "reviewFlags": [
+      "Athens was a major center, but calling it the birthplace of philosophy and art is historically overbroad."
+    ],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 577,
+    "question": "Who was the famous Roman dictator assassinated on the Ides of March in 44 BC?",
+    "sourceAnswer": "Julius Caesar.",
+    "sourceImage": "842420558_1147038891084693_894600476372864010_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 578,
+    "question": "What queen of ancient Egypt was the last active ruler of the Ptolemaic Kingdom?",
+    "sourceAnswer": "Cleopatra.",
+    "sourceImage": "842420558_1147038891084693_894600476372864010_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 579,
+    "question": "What Venetian merchant traveled the Silk Road to China in the 13th century?",
+    "sourceAnswer": "Marco Polo.",
+    "sourceImage": "842420558_1147038891084693_894600476372864010_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 580,
+    "question": "What English king had six wives and broke away from the Catholic Church?",
+    "sourceAnswer": "Henry VIII.",
+    "sourceImage": "842420558_1147038891084693_894600476372864010_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 581,
+    "question": "What 17th-century English conflict led to the execution of King Charles I?",
+    "sourceAnswer": "English Civil War.",
+    "sourceImage": "842420558_1147038891084693_894600476372864010_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 582,
+    "question": "What document signed in 1215 limited the power of the English king?",
+    "sourceAnswer": "Magna Carta.",
+    "sourceImage": "842420558_1147038891084693_894600476372864010_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 583,
+    "question": "What 1773 protest against British tea taxes involved colonists dumping tea in Boston Harbor?",
+    "sourceAnswer": "Boston Tea Party.",
+    "sourceImage": "842420558_1147038891084693_894600476372864010_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 584,
+    "question": "Who was the main author of the American Declaration of Independence?",
+    "sourceAnswer": "Thomas Jefferson.",
+    "sourceImage": "842420558_1147038891084693_894600476372864010_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 585,
+    "question": "What 1803 land deal doubled the size of the United States?",
+    "sourceAnswer": "Louisiana Purchase.",
+    "sourceImage": "842420558_1147038891084693_894600476372864010_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 586,
+    "question": "What nurse during the Crimean War laid the foundation for modern nursing?",
+    "sourceAnswer": "Florence Nightingale.",
+    "sourceImage": "842420558_1147038891084693_894600476372864010_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 587,
+    "question": "What famous British ocean liner was sister ship to the Titanic?",
+    "sourceAnswer": "RMS Olympic.",
+    "sourceImage": "842420558_1147038891084693_894600476372864010_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 588,
+    "question": "Who was the leader of the Bolshevik Revolution in Russia?",
+    "sourceAnswer": "Vladimir Lenin.",
+    "sourceImage": "842420558_1147038891084693_894600476372864010_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 589,
+    "question": "What fascist dictator came to power in Italy in the 1920s?",
+    "sourceAnswer": "Benito Mussolini.",
+    "sourceImage": "842420558_1147038891084693_894600476372864010_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 590,
+    "question": "What communist military alliance was formed in 1955 in response to NATO?",
+    "sourceAnswer": "Warsaw Pact.",
+    "sourceImage": "842420558_1147038891084693_894600476372864010_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 591,
+    "question": "What conflict fought from 1955 to 1975 involved US troops in Southeast Asia?",
+    "sourceAnswer": "Vietnam War.",
+    "sourceImage": "842420558_1147038891084693_894600476372864010_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 592,
+    "question": "Who was the Soviet leader during the Cuban Missile Crisis?",
+    "sourceAnswer": "Nikita Khrushchev.",
+    "sourceImage": "842420558_1147038891084693_894600476372864010_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 593,
+    "question": "What US President resigned in 1974 due to the Watergate scandal?",
+    "sourceAnswer": "Richard Nixon.",
+    "sourceImage": "842420558_1147038891084693_894600476372864010_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 594,
+    "question": "What event marked the reunification of Germany in October 1990?",
+    "sourceAnswer": "Fall of the Berlin Wall (and German reunification).",
+    "sourceImage": "842420558_1147038891084693_894600476372864010_n.jpg",
+    "reviewFlags": [
+      "Source conflates fall of Berlin Wall (9 November 1989) with German reunification (3 October 1990); printed answer preserved."
+    ],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 595,
+    "question": "What digital currency was created in 2009 by the pseudonymous Satoshi Nakamoto?",
+    "sourceAnswer": "Bitcoin.",
+    "sourceImage": "842420558_1147038891084693_894600476372864010_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 596,
+    "question": "What ancient Egyptian writing system used sacred pictorial symbols?",
+    "sourceAnswer": "Hieroglyphics.",
+    "sourceImage": "842420558_1147038891084693_894600476372864010_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 597,
+    "question": "What ancient Greek city-state won the Peloponnesian War against Athens?",
+    "sourceAnswer": "Sparta.",
+    "sourceImage": "842420558_1147038891084693_894600476372864010_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 598,
+    "question": "What Roman city was buried by the eruption of Mount Vesuvius in 79 AD?",
+    "sourceAnswer": "Pompeii.",
+    "sourceImage": "842420558_1147038891084693_894600476372864010_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 599,
+    "question": "What nomadic military leader united the tribes of Arabia to launch early Islamic conquests?",
+    "sourceAnswer": "Prophet Muhammad.",
+    "sourceImage": "842420558_1147038891084693_894600476372864010_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  },
+  {
+    "sourceId": 600,
+    "question": "What series of religious wars were sanctioned by the Latin Church in the medieval period?",
+    "sourceAnswer": "The Crusades.",
+    "sourceImage": "842420558_1147038891084693_894600476372864010_n.jpg",
+    "reviewFlags": [],
+    "acceptedAliases": []
+  }
+]
