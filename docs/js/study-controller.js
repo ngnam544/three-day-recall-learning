@@ -1,34 +1,44 @@
-import {el,add,button,panel} from './render-utils.js';
-import {newSession,selectCard,gradeCard} from './recall-engine.js';
+import {el,add,button,panel,note} from './render-utils.js';
 
 export function studyView(ctx){
- const {root,state,bank,save,render}=ctx;let s=state.session;
- add(root,button('← Trang học',ctx.home,'quiet back'));
- if(!s){state.session=newSession();state.session.mode=ctx.studyMode||'learn';s=state.session;}
- if(s.count>=20){
-  add(root,el('p','20 CÂU',{class:'eyebrow'}),el('h1',s?'Xong 20 câu.':'Câu hỏi và đáp án.'),el('p',s?'Bắt đầu nhóm tiếp theo.':'Đọc câu hỏi cùng đáp án trước. Tự kiểm tra sau.',{class:'muted'}));
-  root.append(button(s?'Bắt đầu nhóm 20 câu tiếp theo →':'Bắt đầu nhóm 20 câu →',()=>{state.session=newSession();state.session.mode=ctx.studyMode||'learn';ctx.promptStarted=Date.now();save();render();},'primary'));return;
- }
- if(s.mode==='review'){if(!s.learnQueue.length&&!s.current)s.learnQueue=bank.questions.filter(x=>state.cards[x.sourceId]?.attempts&&(state.cards[x.sourceId].dueAt<=Date.now()||state.cards[x.sourceId].examWrong)).slice(0,20).map(x=>x.sourceId);s.studyPhase='recall';}
- else if(!s.learnQueue?.length&&!s.current&&s.history.length===0)s.learnQueue=bank.questions.filter(x=>!state.cards[x.sourceId]?.attempts).slice(0,20).map(x=>x.sourceId);
- if(!s.current){const pick=s.learnQueue?.length?s.learnQueue[0]:null;if(pick)s.current=pick;else if(s.mode==='learn')s.studyPhase='recall';}
- if(s.mode==='recall'&&!s.learnQueue.length&&s.count>0){s.count=20;save();return studyView(ctx);}
- if(s.studyPhase==='recall'||s.mode==='review'){
-  if(!s.current){const result=selectCard(bank.questions,state);if(!result.card){add(root,el('h1','Không có câu cần ôn.'),button('Về trang học',ctx.home,'primary'));return;}s.current=result.card.sourceId;s.reason=result.reason;}
- }
- const q=bank.questions.find(item=>item.sourceId===s.current);if(!q){add(root,el('p','Không tìm thấy câu này trong ngân hàng.'),button('Quay lại',ctx.home));return;}
- if(s.studyPhase!=='recall'&&s.studyPhase!=='recall-answer')s.studyPhase='learn';
- const position=s.mode==='learn'&&s.history.length<20?s.history.length+1:s.count+1;
- add(root,el('p',`${s.mode==='review'?'ÔN LẠI':'HỌC'} · ${position}/20`,{class:'eyebrow'}));
- const card=panel(root);add(card,el('p',`CÂU #${q.sourceId}`,{class:'eyebrow'}),el('h2',q.question,{class:'question'}));
- if(s.studyPhase==='learn'&&s.mode==='learn'){
-  const answer=el('div',null,{class:'answer'});add(answer,el('span','ĐÁP ÁN',{class:'eyebrow'}),el('strong',q.sourceAnswer));if(q.reviewFlags.length)answer.append(el('p',q.reviewFlags.map(f=>typeof f==='string'?f:JSON.stringify(f)).join(' · '),{class:'warning'}));card.append(answer);
-  add(card,el('p','Đọc cả hai. Chưa cần nhớ.',{class:'muted'}),button('Tiếp theo →',()=>{s.learnQueue=s.learnQueue.filter(id=>id!==q.sourceId);s.history.push(q.sourceId);if(s.learnQueue.length===0){s.mode='recall';s.studyPhase='recall';s.learnQueue=[...s.history];}s.current=s.learnQueue[0]||null;save();render();},'primary'));
- }else if(s.studyPhase==='learn'||s.studyPhase==='recall'){
-  add(card,el('p','Thử trả lời trước khi xem đáp án.',{class:'muted'}),button('Hiện đáp án',()=>{s.studyPhase='recall-answer';save();render();},'primary'));
+ const {root,state,bank,save,render}=ctx;
+ const mode=ctx.practiceMode||'read';
+ const questions=bank.questions;
+ const allIndex=Math.max(0,Math.min(state.allTestIndex||0,questions.length-1));
+ const readId=state.readQuestionId||questions[0].sourceId;
+ const readIndex=questions.findIndex(q=>q.sourceId===readId);
+ const index=mode==='read'?(readIndex<0?0:readIndex):allIndex;
+ const q=questions[index];
+ add(root,button('← Home',ctx.home,'quiet back'),el('h1',mode==='read'?'Read':'Test all'));
+ const card=panel(root);
+ add(card,el('p',`QUESTION #${q.sourceId} · ${index+1}/${questions.length}`,{class:'eyebrow'}),el('h2',q.question,{class:'question'}));
+
+ if(mode==='read'){
+  const answer=el('div',null,{class:'answer'});add(answer,el('p','ANSWER',{class:'eyebrow'}),el('strong',q.sourceAnswer));card.append(answer);
+  const marked=!!state.starredIds?.[q.sourceId];
+  add(card,button(marked?'★ Unknown':'☆ Mark unknown',()=>{state.starredIds||={};if(marked)delete state.starredIds[q.sourceId];else state.starredIds[q.sourceId]=true;save();render();}));
+  const jump=el('form',null,{class:'jump-row'});add(jump,el('label','Question number',{for:'question-number'}));
+  const input=el('input',null,{id:'question-number',type:'number',min:'1',max:'600',inputmode:'numeric',value:String(q.sourceId),required:'required'});
+  const open=el('button','Open question',{type:'submit',class:'primary'});add(jump,input,open);jump.onsubmit=event=>{event.preventDefault();const target=Number(input.value);if(!Number.isInteger(target)||target<1||target>600){note('Enter a question number from 1 to 600.');return;}if(!questions.some(item=>item.sourceId===target)){note(`Question ${target} is not loaded.`);return;}state.readQuestionId=target;save();render();};card.append(jump);
  }else{
-  const answer=el('div',null,{class:'answer'});add(answer,el('span','ĐÁP ÁN',{class:'eyebrow'}),el('strong',q.sourceAnswer));if(q.reviewFlags.length)answer.append(el('p',q.reviewFlags.map(f=>typeof f==='string'?f:JSON.stringify(f)).join(' · '),{class:'warning'}));card.append(answer);
-  add(card,el('p','Tự đánh giá câu trả lời của bạn:',{class:'muted'}),add(el('div',null,{class:'actions'}),button('Chưa thuộc',()=>finish('wrong'),'danger'),button('Gần nhớ',()=>finish('slow')),button('Đã nhớ',()=>finish('correct'),'good')));
+  const revealed=state.allTestRevealed===true;
+  const form=el('form',null,{class:'test-form'});
+  if(!revealed){
+   const input=el('input',null,{type:'text',autocomplete:'off',placeholder:'Type your answer', 'aria-label':'Your answer'});
+   const submit=el('button','Show answer',{type:'submit',class:'primary'});add(form,input,submit);
+   form.onsubmit=event=>{event.preventDefault();state.allTestTyped=input.value;state.allTestRevealed=true;save();render();};
+   const skip=button('Skip',()=>{state.allTestTyped='';state.allTestRevealed=true;save();render();});form.append(skip);
+  }else{
+   if(state.allTestTyped)add(form,el('p',`Your answer: ${state.allTestTyped}`,{class:'muted'}));
+   const answer=el('div',null,{class:'answer'});add(answer,el('p','ANSWER',{class:'eyebrow'}),el('strong',q.sourceAnswer));form.append(answer);
+   form.append(button(index===questions.length-1?'Finish':'Next question',()=>{if(index<questions.length-1)state.allTestIndex=index+1;state.allTestTyped='';state.allTestRevealed=false;save();render();},'primary'));
+  }
+  card.append(form);
  }
- function finish(grade){gradeCard(state,q.sourceId,grade,Date.now());s.mode='recall';s.studyPhase='learn';s.learnQueue=s.learnQueue.filter(id=>id!==q.sourceId);if(!s.learnQueue.length)s.count=20;s.current=s.learnQueue[0]||null;ctx.promptStarted=Date.now();save();render();}
+ if(questions.length<600)add(root,el('p',`${questions.length}/600 questions loaded.`,{class:'warning'}));
+ if(mode==='read'){
+  const nav=el('div',null,{class:'actions'});
+  const prev=button('Previous',()=>move(index-1));const next=button('Next',()=>move(index+1),'primary');prev.disabled=index===0;next.disabled=index===questions.length-1;add(nav,prev,next);root.append(nav);
+ }
+ function move(nextIndex){state.readQuestionId=questions[nextIndex].sourceId;save();render();}
 }

@@ -1,11 +1,11 @@
-import {loadBank} from './question-repository.js?v=ui20261014c';
-import {KEY,readState,saveState,parseImport,freshState} from './state-store.js?v=ui20261014c';
+import {loadBank} from './question-repository.js?v=ui20261014d';
+import {KEY,readState,saveState,parseImport,freshState} from './state-store.js?v=ui20261014d';
 import {el,add,button,note,download} from './render-utils.js';
-import {dashboard} from './dashboard-view.js?v=ui20261014c';
-import {studyView} from './study-controller.js?v=ui20261014c';
-import {examView,updateExamTimer} from './exam-controller.js?v=ui20261014c';
+import {dashboard} from './dashboard-view.js?v=ui20261014d';
+import {studyView} from './study-controller.js?v=ui20261014d';
+import {examView,updateExamTimer} from './exam-controller.js?v=ui20261014d';
 const root=document.querySelector('#app');let view='home',rawRecovery=null,storageBlocked=false;
-const ctx={root,state:null,bank:null,promptStarted:Date.now(),studyMode:'learn',save,render,home:()=>go('home'),study:(mode='learn')=>{ctx.studyMode=mode;if(ctx.state.session?.mode!==mode||mode==='review')ctx.state.session=null;go('study');},exam:()=>go('exam'),exportState,importState,reset};
+const ctx={root,state:null,bank:null,practiceMode:'read',save,render,home:()=>go('home'),study:(mode='read')=>{ctx.practiceMode=mode;go('study');},exam:()=>go('exam'),exportState,importState,reset};
 function save(){try{saveState(localStorage,ctx.state);return true;}catch(error){note('Không lưu được. Xuất tiến độ để sao lưu.');return false;}}
 function go(next){if(ctx.state)save();view=next;render();window.scrollTo(0,0);}
 function render(){root.replaceChildren();if(!ctx.state){recovery();return;}if(!ctx.bank){root.append(el('h1','Chưa tải được câu hỏi.'),el('p',ctx.bankError||'Đang tải…'),button('Thử tải lại',()=>location.reload(),'primary'),button('Xuất bản lưu',exportState));return;}if(view==='study')studyView(ctx);else if(view==='exam')examView(ctx);else dashboard(ctx);updateExamTimer(ctx);}
