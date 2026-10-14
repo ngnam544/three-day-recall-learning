@@ -1,6 +1,6 @@
 import {el,add,button,panel} from './render-utils.js';
-import {startExam,finishExam,remainingMs,examTotals} from './exam-engine.js?v=ui20261014k';
-import {markColorButtons} from './question-marks.js?v=ui20261014k';
+import {startExam,finishExam,remainingMs,examTotals} from './exam-engine.js?v=ui20261014l';
+import {markColorButtons} from './question-marks.js?v=ui20261014l';
 
 export function examView(ctx){
  const {root,state,bank,save,render}=ctx;let e=state.exam;

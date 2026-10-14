@@ -21,6 +21,7 @@ export function studyView(ctx){
   const revealed=state.allTestRevealed===true,form=el('form',null,{class:'test-form'});
   if(!revealed){
    const input=el('input',null,{type:'text',autocomplete:'off',placeholder:'Nhập đáp án','aria-label':'Đáp án của bạn'}),submit=el('button','Hiện đáp án',{type:'submit',class:'primary'});add(form,input,submit);
+   input.value=state.allTestTyped||'';input.oninput=()=>{state.allTestTyped=input.value;save();};
    form.onsubmit=event=>{event.preventDefault();state.allTestTyped=input.value;state.allTestRevealed=true;save();render();};
    form.append(button('Bỏ qua',()=>{state.allTestTyped='';state.allTestRevealed=true;save();render();}));
   }else{
