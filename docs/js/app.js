@@ -5,7 +5,7 @@ import {dashboard} from './dashboard-view.js';
 import {studyView} from './study-controller.js';
 import {examView,updateExamTimer} from './exam-controller.js';
 const root=document.querySelector('#app');let view='home',rawRecovery=null,storageBlocked=false;
-const ctx={root,state:null,bank:null,promptStarted:Date.now(),save,render,home:()=>go('home'),study:()=>go('study'),exam:()=>go('exam'),exportState,importState,reset};
+const ctx={root,state:null,bank:null,promptStarted:Date.now(),studyMode:'learn',save,render,home:()=>go('home'),study:(mode='learn')=>{ctx.studyMode=mode;if(ctx.state.session?.mode!==mode||mode==='review')ctx.state.session=null;go('study');},exam:()=>go('exam'),exportState,importState,reset};
 function save(){try{saveState(localStorage,ctx.state);return true;}catch(error){note('Không lưu được: '+error.message+'. Hãy xuất JSON ngay.');return false;}}
 function go(next){if(ctx.state)save();view=next;render();window.scrollTo(0,0);}
 function render(){root.replaceChildren();if(!ctx.state){recovery();return;}if(!ctx.bank){root.append(el('h1','Chưa tải được câu hỏi.'),el('p',ctx.bankError||'Đang tải…'),button('Thử tải lại',()=>location.reload(),'primary'),button('Xuất bản lưu',exportState));return;}if(view==='study')studyView(ctx);else if(view==='exam')examView(ctx);else dashboard(ctx);updateExamTimer(ctx);}

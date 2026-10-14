@@ -1,17 +1,24 @@
-import {el,add,button,panel,checkbox} from './render-utils.js';
+import {el,add,button,panel} from './render-utils.js';
 import {ranges} from './question-repository.js';
 import {orphanIds} from './state-store.js';
-export function dashboard(ctx){const {root,state,bank,save,render}=ctx;add(root,el('p','TỪ NHẬN RA → TỰ NHỚ LẠI',{class:'eyebrow'}),el('h1','Mỗi lần nhớ.\nMột bước chắc hơn.'),el('p','Đọc câu hỏi, tự trả lời trong đầu hoặc trên giấy. Sau đó mở đáp án và tự đánh giá.',{class:'muted'}));
- const c=panel(root);c.classList.add('hero');const seen=bank.questions.filter(q=>state.cards[q.sourceId]?.attempts>0).length,due=bank.questions.filter(q=>state.cards[q.sourceId]&&(state.cards[q.sourceId].dueAt<=Date.now()||state.cards[q.sourceId].examWrong)).length,delayed=bank.questions.filter(q=>state.cards[q.sourceId]?.delayedCorrect>=2).length;
- const stats=el('div',null,{class:'stats'});for(const [n,label]of [[seen,'đã thử nhớ'],[due,'cần ôn'],[delayed,'đúng qua 2 lần trễ']])stats.append(add(el('div',null,{class:'stat'}),el('strong',n),el('span',label)));c.append(stats);const progress=el('div',null,{class:'progress'});progress.append(el('i',null,{style:`width:${seen/bank.questions.length*100}%`}));c.append(progress,el('small','Số liệu tự đánh giá, không dự đoán điểm thi.'));
- add(c,button(state.session&&state.session.count<20?'Tiếp tục phiên học →':'Bắt đầu 20 lượt →',()=>ctx.study(),'primary'),el('p',`Ngân hàng: ${bank.questions.length}/600 câu đã xác thực`,{class:'eyebrow'}));
- if(bank.missingIds.length)c.append(el('p',`Chưa đủ 600 câu. Thi thử chỉ lấy trong ${bank.questions.length} câu hiện có. Thiếu: ${ranges(bank.missingIds)}.`,{class:'warning'}));
- const p=panel(root,'Kế hoạch 3 ngày');const days=el('div',null,{class:'row'});for(let i=1;i<=3;i++)days.append(button(`Ngày ${i}`,()=>{state.day=i;save();render();},state.day===i?'primary':''));p.append(days);
- p.append(el('p',state.day<3?'210 phút học xen kẽ · 30 phút nghỉ':'90 phút ôn / bù câu mới · 60 phút thi giấy · 60 phút sửa lỗi · 30 phút nghỉ'));
- p.append(el('p',state.day===1?'Tỷ lệ mục tiêu: 2 câu mới : 1 câu ôn.':state.day===2?'Tỷ lệ mục tiêu: 1 câu mới : 1 câu ôn.':'Dành 10–15 phút trong phần sửa lỗi để viết tay tên riêng đã sai.',{class:'muted'}));
- p.append(checkbox('Ưu tiên câu chưa gặp (2 mới : 1 ôn)',state.catchUp,v=>{state.catchUp=v;save();}));p.append(el('small','Mỗi ngày 240 phút, tổng 720 phút gồm giờ nghỉ. Chọn ngày theo lịch của bạn.'));
- if(state.totalAttempts>=50)p.append(el('p',`Nhịp quan sát: ${Math.round(state.studyMs/state.totalAttempts/1000)} giây/lượt · còn ${bank.questions.length-seen} câu chưa gặp. Không bao gồm thời gian thi giấy.`,{class:'muted'}));
- const x=panel(root,'Thi thử trên giấy');add(x,el('p','30 câu ngẫu nhiên · 60 phút. Viết câu trả lời lên giấy; chỉ xem đáp án khi kết thúc.'),button(state.exam?'Mở bài thi đã lưu →':'Chuẩn bị thi thử →',()=>ctx.exam(),'primary'));
- const io=panel(root,'Bản lưu của bạn');add(io,el('p','Lưu trên trình duyệt này. Xuất một bản JSON để chuyển máy hoặc giữ dự phòng.',{class:'muted'}),el('p',state.savedAt?`Lưu gần nhất: ${new Date(state.savedAt).toLocaleString('vi-VN')}`:'Chưa có bản lưu.',{class:'save'}));const row=el('div',null,{class:'row'});add(row,button('Xuất JSON',ctx.exportState),button('Nhập JSON',ctx.importState),button('Xóa tiến độ',ctx.reset,'quiet danger'));io.append(row);
- const orphans=orphanIds(state,bank.questions);if(orphans.length)io.append(el('p',`Giữ tiến độ của ${orphans.length} ID đang vắng trong ngân hàng: ${ranges(orphans)}.`,{class:'warning'}));
+
+export function dashboard(ctx){
+ const {root,state,bank,save,render}=ctx;
+ const unseen=bank.questions.filter(q=>!state.cards[q.sourceId]?.attempts).length;
+ const due=bank.questions.filter(q=>state.cards[q.sourceId]&&(state.cards[q.sourceId].dueAt<=Date.now()||state.cards[q.sourceId].examWrong)).length;
+ add(root,el('p','BẮT ĐẦU TỪ CÂU SỐ 1',{class:'eyebrow'}),el('h1','Học từng câu. Không cần biết trước.'),el('p','Mỗi câu sẽ hiện cả câu hỏi và đáp án. Đọc để hiểu, thử nhắc lại, rồi app sẽ đưa câu chưa thuộc quay lại.',{class:'muted'}));
+ const start=panel(root);start.classList.add('hero');
+ add(start,el('h2',state.session?.mode==='learn'?'Bạn đang học một nhóm câu.':unseen?'Bắt đầu học câu mới':'Đến lượt ôn lại.'),el('p',`${unseen} câu chưa học · ${due} câu cần ôn lại`,{class:'muted'}));
+ const resume=state.session&&state.session.count<20;
+ add(start,button(resume?(state.session.mode==='recall'?'Tiếp tục ôn lại →':'Tiếp tục học →'):unseen?'Học 20 câu tiếp theo →':'Ôn lại câu chưa thuộc →',()=>ctx.study(resume?state.session.mode:unseen?'learn':'review'),'primary'));
+ start.append(el('p',`Ngân hàng hiện có ${bank.questions.length}/600 câu. Tiến độ lưu trên trình duyệt này.`,{class:'save'}));
+ if(bank.missingIds.length)start.append(el('p',`Còn thiếu câu ${ranges(bank.missingIds)}. Khi bạn gửi trang này, mình sẽ bổ sung.`,{class:'warning'}));
+ const guide=panel(root,'Cách học');
+ for(const [n,t] of [['1','Đọc câu hỏi và đáp án cùng nhau.'],['2','Che đáp án trong đầu hoặc trên giấy, rồi thử nhớ lại.'],['3','Chọn “Chưa thuộc” hoặc “Đã nhớ”; câu khó sẽ được hỏi lại.']])add(guide,add(el('div',null,{class:'row guide-step'}),el('strong',n),el('span',t)));
+ const days=panel(root,'Kế hoạch 3 ngày');
+ const dayRow=el('div',null,{class:'row'});for(let i=1;i<=3;i++)dayRow.append(button(`Ngày ${i}`,()=>{state.day=i;save();render();},state.day===i?'primary':''));days.append(dayRow);
+ days.append(el('p',state.day===1?'Học thật nhiều câu mới trước. Sau đó chỉ ôn những câu chưa thuộc.':state.day===2?'Tiếp tục học câu mới và ôn lại câu hôm qua.':`Ôn câu khó trước, rồi thử đề mẫu 30 câu trong 60 phút.`));
+ if(state.day===3)days.append(button(state.exam?'Mở bài thi đang lưu →':'Thử đề mẫu 30 câu · 60 phút',()=>ctx.exam(),'primary'));
+ const io=panel(root,'Chuyển máy hoặc sao lưu');add(io,el('p','Tiến độ nằm riêng trong trình duyệt của bạn.',{class:'muted'}));const row=el('div',null,{class:'row'});add(row,button('Xuất tiến độ',ctx.exportState),button('Nhập tiến độ',ctx.importState));io.append(row);
+ const orphans=orphanIds(state,bank.questions);if(orphans.length)io.append(el('p',`Đang giữ tiến độ của ${orphans.length} câu hiện chưa có trong danh sách.`,{class:'warning'}));
 }

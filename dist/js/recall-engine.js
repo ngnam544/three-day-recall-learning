@@ -1,5 +1,5 @@
 export const HOUR=3600000;
-export function newSession(now=Date.now()){return {id:`${now}-${Math.random().toString(36).slice(2,8)}`,count:0,reviewCount:0,history:[],remedials:{},lastWrong:{},current:null,revealed:false,typed:'',spelling:false,startedAt:now};}
+export function newSession(now=Date.now()){return {id:`${now}-${Math.random().toString(36).slice(2,8)}`,count:0,reviewCount:0,history:[],remedials:{},lastWrong:{},current:null,revealed:false,typed:'',spelling:false,startedAt:now,mode:'learn',studyPhase:'learn',learnQueue:[]};}
 export function selectCard(questions,state,now=Date.now(),random=Math.random){
  const s=state.session;if(s.count>=20)return {reason:'Đã hoàn thành 20 lượt. Bắt đầu phiên mới khi sẵn sàng.'};
  const newCards=[],review=[],audit=[];

@@ -1,22 +1,32 @@
-import {el,add,button,panel,checkbox,note} from './render-utils.js';
+import {el,add,button,panel} from './render-utils.js';
 import {newSession,selectCard,gradeCard} from './recall-engine.js';
-import {evaluate} from './answer-evaluator.js';
-export function studyView(ctx){const {root,state,bank,save,render}=ctx;let s=state.session;
- add(root,button('← Tổng quan',()=>{state.studyMs+=Math.max(0,Date.now()-ctx.promptStarted);ctx.promptStarted=Date.now();save();ctx.home();},'quiet back'));
- if(!s||s.count>=20){add(root,el('h1',s?'Xong một phiên.':'Sẵn sàng nhớ lại?'),el('p',s?'20 lượt đã được lưu. Nghỉ một chút rồi bắt đầu phiên tiếp theo.':'Mỗi phiên 20 lượt. Không cần gõ; hãy tự trả lời trước khi mở đáp án.'),button('Bắt đầu phiên 20 lượt',()=>{state.session=newSession();save();ctx.promptStarted=Date.now();render();},'primary'));return;}
- if(!s.current){const choice=selectCard(bank.questions,state);if(!choice.card){add(root,el('h1','Tạm nghỉ một nhịp.'),el('p',choice.reason),button('Kết thúc phiên này',()=>{s.count=20;save();render();},'primary'));return;}s.current=choice.card.sourceId;s.reason=choice.reason;save();ctx.promptStarted=Date.now();}
- const q=bank.questions.find(q=>q.sourceId===s.current);if(!q){add(root,el('p','Câu đang học tạm vắng trong ngân hàng. Tiến độ cũ được giữ.'),button('Chọn câu khác',()=>{s.current=null;save();render();}));return;}
- add(root,el('div',`NGÀY ${state.day} · LƯỢT ${s.count+1}/20`,{class:'eyebrow'}));const card=panel(root);add(card,add(el('div',null,{class:'row between'}),el('span',s.reason||'Tự nhớ lại',{class:'pill'}),el('span',`Câu #${q.sourceId}`,{class:'muted'})),el('h1',q.question,{class:'question'}));
- const finish=(grade,extra={})=>{state.studyMs+=Math.max(0,Date.now()-ctx.promptStarted);gradeCard(state,q.sourceId,grade,Date.now(),{rawText:s.typed,automaticResult:s.spelling?evaluate(q,s.typed):null,...extra});save();ctx.promptStarted=Date.now();render();};
- if(!s.revealed){card.append(el('p','Tự trả lời trong đầu hoặc viết ra giấy trước.',{class:'muted'}),checkbox('Kiểm tra chính tả bằng cách gõ',s.spelling,v=>{s.spelling=v;save();render();}));
- if(s.spelling){const input=el('input',null,{type:'text',placeholder:'Câu trả lời của bạn','aria-label':'Câu trả lời để kiểm tra chính tả',autocapitalize:'off',autocomplete:'off',autocorrect:'off',spellcheck:'false'});input.value=s.typed;input.oninput=()=>{s.typed=input.value;save();};input.onkeydown=e=>{if(e.key==='Enter'){s.revealed=true;save();render();}};card.append(input,el('small','Nếu bàn phím vẫn gợi ý, tắt gợi ý trong cài đặt bàn phím.'));}
- add(card,add(el('div',null,{class:'actions study-actions'}),button('Chưa biết',()=>{s.revealed=true;s.unknown=true;save();render();},'quiet'),button('Mở đáp án',()=>{s.revealed=true;save();render();},'primary')));
- }else{const answer=el('div',null,{class:'answer'});add(answer,el('span','ĐÁP ÁN NGUỒN',{class:'eyebrow'}),el('strong',q.sourceAnswer));if(q.reviewFlags.length)answer.append(el('p',`Lưu ý nguồn: ${q.reviewFlags.map(f=>typeof f==='string'?f:JSON.stringify(f)).join(' · ')}`,{class:'warning'}));card.append(answer);
- if(s.spelling)card.append(el('p',evaluate(q,s.typed)?'Chính tả khớp đáp án / bí danh đã duyệt.':'Chính tả chưa khớp. So sánh lại và tự chọn mức bên dưới.',{class:'muted'}),el('p',`Bạn đã gõ: ${s.typed||'(để trống)'}`,{class:'muted'}));
- if(s.unknown){add(card,el('p','Chưa biết → ghi nhận Sai sau khi bạn xem đáp án.'),button('Đã xem · Tiếp tục →',()=>{s.unknown=false;finish('wrong');},'primary'));}
- else{card.append(el('p','Bạn nhớ câu này thế nào?',{class:'muted'}));const auto=s.spelling?evaluate(q,s.typed):null;add(card,add(el('div',null,{class:'actions study-actions'}),button('Sai',()=>finish('wrong',{manualResult:'wrong',gradingMode:s.spelling&&auto===false?'typed-automatic':'self-reported'}),'danger'),button('Chậm',()=>finish('slow',{manualResult:'slow'})),button('Đúng',()=>finish('correct',{manualResult:'correct',gradingMode:s.spelling&&auto?'typed-automatic':'self-reported'}),'good')));}
- const repair=el('details');repair.append(el('summary','Viết lại chính tả (không tính điểm)'));const input=el('input',null,{type:'text','aria-label':'Viết lại đáp án',autocapitalize:'off',autocomplete:'off',autocorrect:'off',spellcheck:'false'});const feedback=el('p',null,{class:'muted'});repair.append(input,button('So sánh',()=>{feedback.textContent=evaluate(q,input.value)?'Khớp. Đây chỉ là luyện viết lại.':'Chưa khớp; đối chiếu đáp án ở trên.';}),feedback);card.append(repair);
- }
- root.append(el('p','Sai: ôn lại sau các câu khác, tối đa 2 lượt sửa mỗi phiên. Chậm: 1 giờ. Đúng: 4 giờ; 2 lần nhớ trễ ở phiên khác: 24 giờ.',{class:'save'}));
-}
 
+export function studyView(ctx){
+ const {root,state,bank,save,render}=ctx;let s=state.session;
+ add(root,button('← Trang học',ctx.home,'quiet back'));
+ if(!s||s.count>=20){
+  add(root,el('p','HỌC THEO NHÓM · 20 CÂU',{class:'eyebrow'}),el('h1',s?'Nhóm này đã xong.':'Đọc để làm quen.'),el('p',s?'Nghỉ một chút, hoặc bắt đầu nhóm mới.':'Bạn chưa cần nhớ ngay. Mỗi câu có sẵn đáp án để học trước.',{class:'muted'}));
+  root.append(button(s?'Bắt đầu nhóm 20 câu tiếp theo →':'Bắt đầu nhóm 20 câu →',()=>{state.session=newSession();state.session.mode=ctx.studyMode||'learn';ctx.promptStarted=Date.now();save();render();},'primary'));return;
+ }
+ if(s.mode==='review'){if(!s.learnQueue.length&&!s.current)s.learnQueue=bank.questions.filter(x=>state.cards[x.sourceId]?.attempts&&(state.cards[x.sourceId].dueAt<=Date.now()||state.cards[x.sourceId].examWrong)).slice(0,20).map(x=>x.sourceId);s.studyPhase='recall';}
+ else if(!s.learnQueue?.length&&!s.current&&s.history.length===0)s.learnQueue=bank.questions.filter(x=>!state.cards[x.sourceId]?.attempts).slice(0,20).map(x=>x.sourceId);
+ if(!s.current){const pick=s.learnQueue?.length?s.learnQueue[0]:null;if(pick)s.current=pick;else if(s.mode==='learn')s.studyPhase='recall';}
+ if(s.studyPhase==='recall'||s.mode==='review'){
+  if(!s.current){const result=selectCard(bank.questions,state);if(!result.card){add(root,el('h1','Hôm nay học tới đây.'),el('p',result.reason),button('Về trang học',ctx.home,'primary'));return;}s.current=result.card.sourceId;s.reason=result.reason;}
+ }
+ const q=bank.questions.find(item=>item.sourceId===s.current);if(!q){add(root,el('p','Không tìm thấy câu này trong ngân hàng.'),button('Quay lại',ctx.home));return;}
+ if(s.studyPhase!=='recall'&&s.studyPhase!=='recall-answer')s.studyPhase='learn';
+ const position=s.history.length+1;
+ add(root,el('p',`${s.mode==='review'?'ÔN LẠI':'NHÓM 1'} · CÂU ${position}/20`,{class:'eyebrow'}));
+ const card=panel(root);add(card,el('p',`CÂU #${q.sourceId}`,{class:'eyebrow'}),el('h2',q.question,{class:'question'}));
+ if(s.studyPhase==='learn'&&s.mode==='learn'){
+  const answer=el('div',null,{class:'answer'});add(answer,el('span','ĐÁP ÁN',{class:'eyebrow'}),el('strong',q.sourceAnswer));if(q.reviewFlags.length)answer.append(el('p',q.reviewFlags.map(f=>typeof f==='string'?f:JSON.stringify(f)).join(' · '),{class:'warning'}));card.append(answer);
+  add(card,el('p','Đọc câu hỏi và đáp án cùng nhau một lần. Chưa cần tự kiểm tra.',{class:'muted'}),button('Đã đọc · Sang câu tiếp →',()=>{s.learnQueue=s.learnQueue.filter(id=>id!==q.sourceId);s.history.push(q.sourceId);if(s.learnQueue.length===0)s.studyPhase='recall';else s.current=s.learnQueue[0];save();render();},'primary'));
+ }else if(s.studyPhase==='learn'||s.studyPhase==='recall'||s.mode==='review'){
+  add(card,el('p','Thử nhớ câu trả lời. Không biết cũng bình thường.',{class:'muted'}),button('Xem đáp án',()=>{s.studyPhase='recall-answer';save();render();},'primary'));
+ }else{
+  const answer=el('div',null,{class:'answer'});add(answer,el('span','ĐÁP ÁN',{class:'eyebrow'}),el('strong',q.sourceAnswer));if(q.reviewFlags.length)answer.append(el('p',q.reviewFlags.map(f=>typeof f==='string'?f:JSON.stringify(f)).join(' · '),{class:'warning'}));card.append(answer,el('p','Bạn có nhớ được câu trả lời trước khi mở đáp án?',{class:'muted'}));
+  add(card,add(el('div',null,{class:'actions'}),button('Chưa thuộc',()=>finish('wrong'),'danger'),button('Gần nhớ',()=>finish('slow')),button('Đã nhớ',()=>finish('correct'),'good')));
+ }
+ function finish(grade){gradeCard(state,q.sourceId,grade,Date.now());s.mode='recall';s.studyPhase='learn';s.learnQueue=s.learnQueue.filter(id=>id!==q.sourceId);s.current=s.learnQueue[0]||null;ctx.promptStarted=Date.now();save();render();}
+}
