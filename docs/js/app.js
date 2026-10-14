@@ -1,8 +1,8 @@
-import {loadBank} from './question-repository.js';
-import {KEY,readState,saveState,parseImport,freshState} from './state-store.js';
+import {loadBank} from './question-repository.js?v=4d7a28a';
+import {KEY,readState,saveState,parseImport,freshState} from './state-store.js?v=4d7a28a';
 import {el,add,button,note,download} from './render-utils.js';
-import {dashboard} from './dashboard-view.js';
-import {studyView} from './study-controller.js';
+import {dashboard} from './dashboard-view.js?v=4d7a28a';
+import {studyView} from './study-controller.js?v=4d7a28a';
 import {examView,updateExamTimer} from './exam-controller.js';
 const root=document.querySelector('#app');let view='home',rawRecovery=null,storageBlocked=false;
 const ctx={root,state:null,bank:null,promptStarted:Date.now(),studyMode:'learn',save,render,home:()=>go('home'),study:(mode='learn')=>{ctx.studyMode=mode;if(ctx.state.session?.mode!==mode||mode==='review')ctx.state.session=null;go('study');},exam:()=>go('exam'),exportState,importState,reset};
