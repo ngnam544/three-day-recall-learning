@@ -1,9 +1,9 @@
-import {loadBank} from './question-repository.js?v=ui20261014g';
-import {KEY,readState,saveState,parseImport,freshState} from './state-store.js?v=ui20261014g';
+import {loadBank} from './question-repository.js?v=ui20261014h';
+import {KEY,readState,saveState,parseImport,freshState} from './state-store.js?v=ui20261014h';
 import {el,add,button,note,download} from './render-utils.js';
-import {dashboard} from './dashboard-view.js?v=ui20261014g';
-import {studyView} from './study-controller.js?v=ui20261014g';
-import {examView,updateExamTimer} from './exam-controller.js?v=ui20261014g';
+import {dashboard} from './dashboard-view.js?v=ui20261014h';
+import {studyView} from './study-controller.js?v=ui20261014h';
+import {examView,updateExamTimer} from './exam-controller.js?v=ui20261014h';
 const root=document.querySelector('#app');let view='home',rawRecovery=null,storageBlocked=false;
 const ctx={root,state:null,bank:null,practiceMode:'read',save,render,home:()=>go('home'),study:(mode='read')=>{ctx.practiceMode=mode;go('study');},exam:()=>go('exam'),exportState,importState,reset};
 function save(){try{saveState(localStorage,ctx.state);return true;}catch(error){note('Không lưu được. Xuất tiến độ để sao lưu.');return false;}}

@@ -4,7 +4,7 @@ export function dashboard(ctx){
  const {root,bank,state}=ctx;
  add(root,el('p','600 CÂU HỎI',{class:'eyebrow'}),el('h1','Chọn chế độ.'));
  const guide=panel(root,'Cách dùng');
- add(guide,el('p','Đọc: câu hỏi và đáp án hiện bằng tiếng Anh. Bấm “Dịch nghĩa” để hiện bản dịch tiếng Việt. Ba nút màu dùng để đánh dấu mức độ thuộc.'),el('p','Test hết: nhập đáp án rồi nhấn Enter, hoặc bỏ qua. Đáp án hiện trước khi sang câu tiếp.'),el('p','Thi thử: 30 câu ngẫu nhiên, 60 phút. Viết đáp án trên giấy.'));
+ add(guide,el('p','Đọc: bấm “Dịch nghĩa” để hiện câu tiếng Việt ngay dưới câu tiếng Anh. Ba nút màu dùng để đánh dấu mức độ thuộc.'),el('p','Test hết: nhập đáp án rồi nhấn Enter, hoặc bỏ qua. Đáp án hiện trước khi sang câu tiếp.'),el('p','Thi thử: 30 câu ngẫu nhiên, 60 phút. Viết đáp án trên giấy.'));
  const modes=el('div',null,{class:'mode-grid'});
  add(modes,button('Đọc',()=>ctx.study('read'),'primary'),button('Test hết',()=>ctx.study('all')),
   button('Thi thử · 30 câu · 60 phút',ctx.exam));

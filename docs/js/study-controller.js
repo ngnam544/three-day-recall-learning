@@ -10,13 +10,14 @@ export function studyView(ctx){
  add(root,button('← Trang chủ',ctx.home,'quiet back'),el('h1',mode==='read'?'Đọc':'Test hết'));
  const card=panel(root),showVietnamese=state.readVietnamese===true;
  add(card,el('p',`CÂU #${q.sourceId} · ${index+1}/${questions.length}`,{class:'eyebrow'}),el('h2',q.question,{class:'question'}));
+ if(mode==='read'&&showVietnamese)card.append(el('p',q.questionVi||'',{class:'translation'}));
 
  if(mode==='read'){
   const answer=el('div',null,{class:'answer'});add(answer,el('p','ĐÁP ÁN',{class:'eyebrow'}),el('strong',q.sourceAnswer));card.append(answer);
   const language=button(showVietnamese?'Ẩn nghĩa':'Dịch nghĩa',()=>{state.readVietnamese=!showVietnamese;save();render();},'language-toggle');language.setAttribute('aria-expanded',String(showVietnamese));card.append(language);
   const colors=el('div',null,{class:'mark-colors','aria-label':'Mark knowledge'}),active=state.starredIds?.[q.sourceId]||'';
   for(const color of ['red','yellow','green']){const mark=button('',()=>{state.starredIds||={};if(active===color)delete state.starredIds[q.sourceId];else state.starredIds[q.sourceId]=color;save();render();},`mark-dot ${color}${active===color?' selected':''}`);mark.setAttribute('aria-label',`${color} mark`);mark.setAttribute('aria-pressed',String(active===color));colors.append(mark);}card.append(colors);
-  if(showVietnamese){card.append(el('p',q.questionVi||'',{class:'translation'}));answer.append(el('p',q.answerVi||'',{class:'translation'}));}
+  if(showVietnamese)answer.append(el('p',q.answerVi||'',{class:'translation'}));
  }else{
   const revealed=state.allTestRevealed===true,form=el('form',null,{class:'test-form'});
   if(!revealed){
