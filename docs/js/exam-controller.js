@@ -1,5 +1,6 @@
 import {el,add,button,panel} from './render-utils.js';
-import {startExam,finishExam,remainingMs,examTotals} from './exam-engine.js?v=ui20261014j';
+import {startExam,finishExam,remainingMs,examTotals} from './exam-engine.js?v=ui20261014k';
+import {markColorButtons} from './question-marks.js?v=ui20261014k';
 
 export function examView(ctx){
  const {root,state,bank,save,render}=ctx;let e=state.exam;
@@ -31,6 +32,7 @@ export function examView(ctx){
   root.querySelector('.row.between .muted').textContent=`${count} đã nhập`;
  };
  card.append(response);
+ card.append(markColorButtons(state,q.sourceId,save,render));
  if(!live){
   const status=e.grades[q.sourceId]==='correct'?'Đúng':e.grades[q.sourceId]==='wrong'?'Sai':'Chưa chấm';
   const answer=el('div',null,{class:'answer'});add(answer,el('p','ĐÁP ÁN ĐÚNG',{class:'eyebrow'}),el('strong',q.sourceAnswer));
