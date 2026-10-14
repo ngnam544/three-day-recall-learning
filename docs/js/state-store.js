@@ -3,6 +3,7 @@ export const KEY='three-day-recall:v1';
 const object=v=>v!==null&&typeof v==='object'&&!Array.isArray(v);
 const number=v=>typeof v==='number'&&Number.isFinite(v)&&v>=0;
 const id=v=>Number.isInteger(v)&&v>=1&&v<=600;
+function upgradeState(s){if(!object(s))return s;if(s.readQuestionId!==undefined&&s.readQuestionId!==null&&!id(s.readQuestionId))s.readQuestionId=null;if(!object(s.starredIds))s.starredIds={};for(const [key,value]of Object.entries(s.starredIds)){if(!id(Number(key))||!(value===true||['red','yellow','green'].includes(value)))delete s.starredIds[key];else if(value===true)s.starredIds[key]='yellow';}if(typeof s.readVietnamese!=='boolean')s.readVietnamese=false;return s;}
 export function freshState(){return {schemaVersion:1,bankId:BANK_ID,cards:{},session:null,exam:null,day:1,catchUp:false,totalAttempts:0,studyMs:0,savedAt:0,readQuestionId:null,starredIds:{},readVietnamese:false};}
 export function validateState(s){
  if(!object(s)||s.schemaVersion!==1||s.bankId!==BANK_ID||!object(s.cards)||![1,2,3].includes(s.day)||typeof s.catchUp!=='boolean'||!number(s.totalAttempts)||!number(s.studyMs))throw Error('Bản lưu không đúng phiên bản/ngân hàng hoặc cấu trúc.');
@@ -21,8 +22,8 @@ export function validateState(s){
  if(s.exam!==null){const x=s.exam;if(!object(x)||typeof x.id!=='string'||!Array.isArray(x.questions)||x.questions.length!==30||new Set(x.questions.map(q=>q.sourceId)).size!==30||x.questions.some(q=>!id(q.sourceId)||typeof q.question!=='string'||typeof q.sourceAnswer!=='string'||!Array.isArray(q.reviewFlags))||!number(x.startedAt)||!number(x.endsAt)||x.endsAt!==x.startedAt+3600000||!Number.isInteger(x.index)||x.index<0||x.index>29||!object(x.checked)||!object(x.grades)||!(x.finalizedAt===null||number(x.finalizedAt)))throw Error('Bài thi không hợp lệ.');if(x.finalizedAt===null&&Object.keys(x.grades).length)throw Error('Bài thi chưa kết thúc nhưng đã có điểm.');const ids=x.questions.map(q=>q.sourceId);for(const [k,v]of Object.entries(x.checked))if(!ids.includes(Number(k))||typeof v!=='boolean')throw Error('Đánh dấu thi không hợp lệ.');for(const [k,v]of Object.entries(x.grades))if(!ids.includes(Number(k))||!['correct','wrong'].includes(v))throw Error('Tự chấm không hợp lệ.');}
  return s;
 }
-export function readState(storage){const raw=storage.getItem(KEY);if(raw===null)return {state:freshState(),raw:null};try{return {state:validateState(JSON.parse(raw)),raw};}catch(error){return {state:null,raw,error};}}
+export function readState(storage){const raw=storage.getItem(KEY);if(raw===null)return {state:freshState(),raw:null};try{return {state:validateState(upgradeState(JSON.parse(raw))),raw};}catch(error){return {state:null,raw,error};}}
 export function saveState(storage,state){const candidate={...state,savedAt:Date.now()};const raw=JSON.stringify(validateState(candidate));storage.setItem(KEY,raw);state.savedAt=candidate.savedAt;return raw;}
-export function parseImport(raw){return validateState(JSON.parse(raw));}
+export function parseImport(raw){return validateState(upgradeState(JSON.parse(raw)));}
 export function orphanIds(state,questions){const ids=new Set(questions.map(q=>q.sourceId));return Object.keys(state.cards).map(Number).filter(id=>!ids.has(id));}
 
