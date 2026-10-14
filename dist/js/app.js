@@ -1,12 +1,12 @@
-import {loadBank} from './question-repository.js?v=ui20261014l';
-import {KEY,readState,saveState,parseImport,freshState} from './state-store.js?v=ui20261014l';
+import {loadBank} from './question-repository.js?v=ui20261014m';
+import {KEY,readState,saveState,parseImport,freshState} from './state-store.js?v=ui20261014m';
 import {el,add,button,note,download} from './render-utils.js';
-import {dashboard} from './dashboard-view.js?v=ui20261014l';
-import {studyView} from './study-controller.js?v=ui20261014l';
-import {examView,updateExamTimer} from './exam-controller.js?v=ui20261014l';
-import {markedView} from './marked-view.js?v=ui20261014l';
+import {dashboard} from './dashboard-view.js?v=ui20261014m';
+import {studyView} from './study-controller.js?v=ui20261014m';
+import {examView,updateExamTimer} from './exam-controller.js?v=ui20261014m';
+import {markedView} from './marked-view.js?v=ui20261014m';
 const root=document.querySelector('#app');let view='home',rawRecovery=null,storageBlocked=false;
-const ctx={root,state:null,bank:null,practiceMode:'read',save,render,home:()=>go('home'),study:(mode='read')=>{ctx.practiceMode=mode;go('study');},exam:()=>go('exam'),marked:()=>go('marked'),exportState,importState,reset};
+const ctx={root,state:null,bank:null,practiceMode:'read',markedColorFilter:'all',save,render,home:()=>go('home'),study:(mode='read')=>{ctx.practiceMode=mode;go('study');},exam:()=>go('exam'),marked:()=>go('marked'),exportState,importState,reset};
 function save(){try{saveState(localStorage,ctx.state);return true;}catch(error){note('Không lưu được tiến độ trên thiết bị này.');return false;}}
 function go(next){if(ctx.state)save();view=next;render();window.scrollTo(0,0);}
 function render(){root.replaceChildren();if(!ctx.state){recovery();return;}if(!ctx.bank){root.append(el('h1','Chưa tải được câu hỏi.'),el('p',ctx.bankError||'Đang tải…'),button('Thử tải lại',()=>location.reload(),'primary'),button('Xuất bản lưu',exportState));return;}if(view==='study')studyView(ctx);else if(view==='exam')examView(ctx);else if(view==='marked')markedView(ctx);else dashboard(ctx);updateExamTimer(ctx);}

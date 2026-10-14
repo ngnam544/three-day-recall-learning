@@ -1,5 +1,5 @@
 import {el,add,button,panel,note} from './render-utils.js';
-import {markColorButtons} from './question-marks.js';
+import {markColorButtons} from './question-marks.js?v=ui20261014m';
 
 export function studyView(ctx){
  const {root,state,bank,save,render}=ctx;

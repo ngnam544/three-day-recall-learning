@@ -1,11 +1,19 @@
 import {el,add,button,panel} from './render-utils.js';
-import {listMarkedQuestions,markColorButtons} from './question-marks.js';
+import {listMarkedQuestions,markColorButtons} from './question-marks.js?v=ui20261014m';
 
 export function markedView(ctx){
  const {root,state,bank,save,render}=ctx;
  root.append(button('← Trang chủ',ctx.home,'quiet back'),el('h1','Câu đã đánh dấu'));
- const questions=listMarkedQuestions(bank.questions,state);
- if(!questions.length){root.append(el('p','Chưa có câu nào được đánh dấu.'));return;}
+ const allQuestions=listMarkedQuestions(bank.questions,state),filter=ctx.markedColorFilter||'all';
+ const filters=[['all','Tất cả'],['red','Đỏ'],['yellow','Vàng'],['green','Xanh']],controls=el('div',null,{class:'actions mark-filters'});
+ for(const [color,label]of filters){
+  const count=color==='all'?allQuestions.length:listMarkedQuestions(bank.questions,state,color).length;
+  controls.append(button(`${label} (${count})`,()=>{ctx.markedColorFilter=color;render();},filter===color?'primary':''));
+ }
+ root.append(controls);
+ if(!allQuestions.length){root.append(el('p','Chưa có câu nào được đánh dấu.'));return;}
+ const questions=listMarkedQuestions(bank.questions,state,filter);
+ if(!questions.length){root.append(el('p',`Không có câu màu ${filter==='red'?'đỏ':filter==='yellow'?'vàng':'xanh'}.`));return;}
  root.append(el('p',`${questions.length} câu`,{class:'muted'}));
  for(const q of questions){
   const card=panel(root);

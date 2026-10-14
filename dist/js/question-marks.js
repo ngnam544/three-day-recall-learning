@@ -8,8 +8,11 @@ export function toggleQuestionMark(state,questionId,color){
  else state.starredIds[questionId]=color;
 }
 
-export function listMarkedQuestions(questions,state){
- return questions.filter(question=>state.starredIds?.[question.sourceId]);
+export function listMarkedQuestions(questions,state,color='all'){
+ return questions.filter(question=>{
+  const mark=state.starredIds?.[question.sourceId];
+  return mark&&(color==='all'||mark===color);
+ });
 }
 
 export function markColorButtons(state,questionId,save,render){
