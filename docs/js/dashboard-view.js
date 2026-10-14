@@ -2,16 +2,15 @@ import {el,add,button,panel} from './render-utils.js';
 
 export function dashboard(ctx){
  const {root,bank,state}=ctx;
- add(root,el('p','600 QUESTIONS',{class:'eyebrow'}),el('h1','Choose a mode.'));
- const guide=panel(root,'Guide');
- add(guide,el('p','Read: answers are visible. Enter a question number to jump to it. Star questions you do not know.'),el('p','Test all: type an answer and press Enter, or skip. The answer appears before you continue.'),el('p','Mock test: 30 random questions, 60 minutes. Write answers on paper.'));
+ add(root,el('p','600 CÂU HỎI',{class:'eyebrow'}),el('h1','Chọn chế độ.'));
+ const guide=panel(root,'Cách dùng');
+ add(guide,el('p','Đọc: đáp án hiện sẵn bằng tiếng Việt. Dùng VI/EN để đổi ngôn ngữ. Chọn màu để đánh dấu mức độ thuộc.'),el('p','Test hết: nhập đáp án rồi nhấn Enter, hoặc bỏ qua. Đáp án hiện trước khi sang câu tiếp.'),el('p','Thi thử: 30 câu ngẫu nhiên, 60 phút. Viết đáp án trên giấy.'));
  const modes=el('div',null,{class:'mode-grid'});
- add(modes,button('Read',()=>ctx.study('read'),'primary'),button('Test all',()=>ctx.study('all')),
-  button('Mock test · 30 questions · 60 minutes',ctx.exam));
+ add(modes,button('Đọc',()=>ctx.study('read'),'primary'),button('Test hết',()=>ctx.study('all')),
+  button('Thi thử · 30 câu · 60 phút',ctx.exam));
  root.append(modes);
  const count=bank.questions.length;
- if(count<600)add(root,el('p',`${count}/600 questions loaded. Missing: ${bank.missingIds.join(', ')}.`,{class:'warning'}));
- const backup=el('details',null,{class:'card'});backup.append(el('summary','Progress backup'),el('p','Progress is saved in this browser.'));
- const actions=el('div',null,{class:'row'});add(actions,button('Export progress',ctx.exportState),button('Import progress',ctx.importState));backup.append(actions);root.append(backup);
- if(Object.keys(state.cards).length||Object.keys(state.starredIds||{}).length)root.append(el('p','Progress is saved in this browser.',{class:'save'}));
+ if(count<600)add(root,el('p',`Trong app: ${count}/600 câu. Thiếu: ${bank.missingIds.join(', ')}.`,{class:'warning'}));
+ const backup=el('details',null,{class:'card'});backup.append(el('summary','Sao lưu tiến độ'),el('p','Tiến độ lưu trên trình duyệt này.'));
+ const actions=el('div',null,{class:'row'});add(actions,button('Xuất tiến độ',ctx.exportState),button('Nhập tiến độ',ctx.importState));backup.append(actions);root.append(backup);
 }

@@ -3,9 +3,12 @@ export const KEY='three-day-recall:v1';
 const object=v=>v!==null&&typeof v==='object'&&!Array.isArray(v);
 const number=v=>typeof v==='number'&&Number.isFinite(v)&&v>=0;
 const id=v=>Number.isInteger(v)&&v>=1&&v<=600;
-export function freshState(){return {schemaVersion:1,bankId:BANK_ID,cards:{},session:null,exam:null,day:1,catchUp:false,totalAttempts:0,studyMs:0,savedAt:0};}
+export function freshState(){return {schemaVersion:1,bankId:BANK_ID,cards:{},session:null,exam:null,day:1,catchUp:false,totalAttempts:0,studyMs:0,savedAt:0,readQuestionId:null,starredIds:{},readVietnamese:false};}
 export function validateState(s){
  if(!object(s)||s.schemaVersion!==1||s.bankId!==BANK_ID||!object(s.cards)||![1,2,3].includes(s.day)||typeof s.catchUp!=='boolean'||!number(s.totalAttempts)||!number(s.studyMs))throw Error('Bản lưu không đúng phiên bản/ngân hàng hoặc cấu trúc.');
+ if(s.readQuestionId!==undefined&&s.readQuestionId!==null&&!id(s.readQuestionId))throw Error('Câu đang đọc không hợp lệ.');
+ if(s.starredIds!==undefined&&(!object(s.starredIds)||Object.entries(s.starredIds).some(([key,value])=>!id(Number(key))||!['red','yellow','green'].includes(value))))throw Error('Đánh dấu màu không hợp lệ.');
+ if(s.readVietnamese!==undefined&&typeof s.readVietnamese!=='boolean')throw Error('Ngôn ngữ đọc không hợp lệ.');
  for(const [key,c] of Object.entries(s.cards)){
   if(!id(Number(key))||String(Number(key))!==key||!object(c))throw Error('ID thẻ không hợp lệ.');
   for(const field of ['attempts','misses','lastSeen','dueAt','delayedCorrect'])if(!number(c[field]))throw Error('Số liệu thẻ không hợp lệ.');
