@@ -1,0 +1,6 @@
+export function shuffle(items,random=Math.random){const a=[...items];for(let i=a.length-1;i>0;i--){const j=Math.floor(random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+export function startExam(questions,now=Date.now(),random=Math.random){if(questions.length<30)throw Error('Cần ít nhất 30 câu đã xác thực.');return {id:`exam-${now}`,questions:shuffle(questions,random).slice(0,30).map(q=>structuredClone(q)),startedAt:now,endsAt:now+3600000,index:0,checked:{},grades:{},finalizedAt:null,reason:null};}
+export function finalizeExam(exam,reason,now=Date.now()){if(exam.finalizedAt!==null)return false;exam.finalizedAt=now;exam.reason=reason;return true;}
+export function remainingMs(exam,now=Date.now()){return Math.max(0,exam.endsAt-now);}
+export function gradeExam(state,id,grade){const e=state.exam;if(e.finalizedAt===null)throw Error('Bài thi chưa kết thúc.');if(!e.questions.some(q=>q.sourceId===id)||!['correct','wrong'].includes(grade))throw Error('Điểm không hợp lệ.');e.grades[id]=grade;const c=state.cards[id];if(grade==='wrong'){state.cards[id]={attempts:0,misses:0,lastSeen:0,dueAt:0,delayedCorrect:0,...c,examWrong:true};}else if(c)c.examWrong=false;}
+export function examTotals(exam){const grades=Object.values(exam.grades);return {correct:grades.filter(g=>g==='correct').length,wrong:grades.filter(g=>g==='wrong').length,ungraded:30-grades.length};}
