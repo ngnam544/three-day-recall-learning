@@ -1,6 +1,6 @@
 import {el,add,button,panel} from './render-utils.js';
-import {startExam,finishExam,remainingMs,examTotals} from './exam-engine.js?v=ui20261015a';
-import {markColorButtons,listMarkedQuestions} from './question-marks.js?v=ui20261015a';
+import {startExam,finishExam,remainingMs,examTotals} from './exam-engine.js?v=ui20261014m';
+import {markColorButtons} from './question-marks.js?v=ui20261014m';
 
 export function examView(ctx){
  const {root,state,bank,save,render}=ctx;let e=state.exam;
@@ -8,17 +8,7 @@ export function examView(ctx){
  if(!e){
   add(root,el('p','THI THỬ',{class:'eyebrow'}),el('h1','30 câu · 60 phút'),el('p','Gõ câu trả lời trong app. Sau khi nộp bài hoặc hết giờ, app sẽ chấm điểm và hiện đáp án.'));
   const card=panel(root);
-  add(card,el('p',`Ngẫu nhiên từ ${bank.questions.length}/600 câu. ${bank.questions.length<600?'Ngân hàng chưa đầy đủ.':''}`,{class:'warning'}));
-  const colorLabel={all:'Tất cả câu',red:'Đỏ',yellow:'Vàng',green:'Xanh'},orderLabel={random:'Xáo ngẫu nhiên',linear:'Theo thứ tự'};
-  const colorSelect=el('select',null,{'aria-label':'Bộ màu câu hỏi'});
-  for(const [value,label]of Object.entries(colorLabel)){const option=el('option',label,{value});colorSelect.append(option);}
-  const orderSelect=el('select',null,{'aria-label':'Thứ tự câu hỏi'});
-  for(const [value,label]of Object.entries(orderLabel)){const option=el('option',label,{value});orderSelect.append(option);}
-  const count=el('p',null,{class:'muted'}),start=button('Bắt đầu thi',begin,'primary');
-  const updateCount=()=>{const total=listMarkedQuestions(bank.questions,state,colorSelect.value).length;count.textContent=`${total} câu trong bộ ${colorLabel[colorSelect.value]}. Cần ít nhất 30 câu.`;start.disabled=total<30;};
-  colorSelect.onchange=updateCount;updateCount();
-  function begin(){const pool=listMarkedQuestions(bank.questions,state,colorSelect.value);if(pool.length<30)return;const ordered=orderSelect.value==='linear'?pool:[...pool].sort(()=>Math.random()-.5);state.exam=startExam(ordered,Date.now(),Math.random,'linear');state.exam.markFilter=colorSelect.value;state.exam.order=orderSelect.value;if(save())render();else state.exam=null;}
-  add(card,el('p','Thi theo câu đã đánh dấu',{class:'eyebrow'}),el('label','Bộ màu'),colorSelect,el('label','Thứ tự câu'),orderSelect,count,start);
+  add(card,el('p',`Ngẫu nhiên từ ${bank.questions.length}/600 câu. ${bank.questions.length<600?'Ngân hàng chưa đầy đủ.':''}`,{class:'warning'}),button('Bắt đầu thi',()=>{state.exam=startExam(bank.questions);if(save())render();else state.exam=null;},'primary'));
   return;
  }
  if(e.finalizedAt===null&&remainingMs(e)===0){finishExam(state,'timeout');save();}
