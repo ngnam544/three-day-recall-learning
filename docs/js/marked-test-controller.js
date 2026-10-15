@@ -25,9 +25,10 @@ export function markedTestView(ctx){
  card.append(response);
  if(test.submitted){
   const isCorrect=evaluate(q,test.responses[q.sourceId]||''),answer=el('div',null,{class:'answer'});
-  add(answer,el('p','ĐÁP ÁN',{class:'eyebrow'}),el('strong',q.sourceAnswer));
-  if(q.answerVi)answer.append(el('p',q.answerVi,{class:'translation'}));
-  add(card,el('p',test.responses[q.sourceId]?`Bạn nhập: ${test.responses[q.sourceId]}`:'Bỏ trống',{class:'muted'}),el('p',isCorrect?'Đúng':'Sai',{class:isCorrect?'good-text':'wrong-text'}),answer);
+  if(test.revealedAnswers?.[q.sourceId]){add(answer,el('p','ĐÁP ÁN',{class:'eyebrow'}),el('strong',q.sourceAnswer));if(q.answerVi)answer.append(el('p',q.answerVi,{class:'translation'}));}
+  add(card,el('p',test.responses[q.sourceId]?`Bạn nhập: ${test.responses[q.sourceId]}`:'Bỏ trống',{class:'muted'}),el('p',isCorrect?'Đúng':'Sai',{class:isCorrect?'good-text':'wrong-text'}));
+  if(test.revealedAnswers?.[q.sourceId])card.append(answer);
+  card.append(button(test.revealedAnswers?.[q.sourceId]?'Ẩn đáp án':'Hiện đáp án',()=>{test.revealedAnswers||={};test.revealedAnswers[q.sourceId]=!test.revealedAnswers[q.sourceId];save();render();}));
  }else{
   const nav=el('div',null,{class:'actions'}),prev=button('← Trước',()=>move(-1)),next=button('Tiếp →',()=>move(1));
   prev.disabled=test.index===0;next.disabled=test.index===questions.length-1;add(nav,prev,next);card.append(nav);
@@ -51,7 +52,7 @@ export function markedTestView(ctx){
   const update=()=>{const total=listMarkedQuestions(bank.questions,state,color.value).length;count.textContent=`${total} câu màu ${labels[color.value]}.`;start.disabled=total===0;};
   color.onchange=update;update();
   add(card,el('label','Bộ màu'),color,el('label','Thứ tự câu'),order,count,start);
-  function begin(){const pool=listMarkedQuestions(bank.questions,state,color.value);if(!pool.length)return;const ordered=order.value==='random'?shuffle(pool):pool;state.markedTest={id:`marked-test-${Date.now()}`,color:color.value,order:order.value,questionIds:ordered.map(q=>q.sourceId),index:0,responses:{},submitted:false};if(save())render();else state.markedTest=null;}
+  function begin(){const pool=listMarkedQuestions(bank.questions,state,color.value);if(!pool.length)return;const ordered=order.value==='random'?shuffle(pool):pool;state.markedTest={id:`marked-test-${Date.now()}`,color:color.value,order:order.value,questionIds:ordered.map(q=>q.sourceId),index:0,responses:{},revealedAnswers:{},submitted:false};if(save())render();else state.markedTest=null;}
  }
 }
 

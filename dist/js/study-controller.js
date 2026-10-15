@@ -14,21 +14,23 @@ export function studyView(ctx){
  if(mode==='read'&&showVietnamese)card.append(el('p',q.questionVi||'',{class:'translation'}));
 
  if(mode==='read'){
-  const answer=el('div',null,{class:'answer'});add(answer,el('p','ĐÁP ÁN',{class:'eyebrow'}),el('strong',q.sourceAnswer));card.append(answer);
+  const answerVisible=state.readAnswerVisibleFor===q.sourceId;
+  if(answerVisible){const answer=el('div',null,{class:'answer'});add(answer,el('p','ĐÁP ÁN',{class:'eyebrow'}),el('strong',q.sourceAnswer));if(showVietnamese)answer.append(el('p',q.answerVi||'',{class:'translation'}));card.append(answer);}
+  const reveal=button(answerVisible?'Ẩn đáp án':'Hiện đáp án',()=>{state.readAnswerVisibleFor=answerVisible?null:q.sourceId;save();render();},'language-toggle');reveal.setAttribute('aria-expanded',String(answerVisible));card.append(reveal);
   const language=button(showVietnamese?'Ẩn nghĩa':'Dịch nghĩa',()=>{state.readVietnamese=!showVietnamese;save();render();},'language-toggle');language.setAttribute('aria-expanded',String(showVietnamese));card.append(language);
-  if(showVietnamese)answer.append(el('p',q.answerVi||'',{class:'translation'}));
  }else{
-  const revealed=state.allTestRevealed===true,form=el('form',null,{class:'test-form'});
-  if(!revealed){
+  const revealed=state.allTestRevealed===true,skipped=state.allTestSkipped===true,form=el('form',null,{class:'test-form'});
+  if(!revealed&&!skipped){
    const input=el('input',null,{type:'text',autocomplete:'off',placeholder:'Nhập đáp án','aria-label':'Đáp án của bạn'}),submit=el('button','Hiện đáp án',{type:'submit',class:'primary'});add(form,input,submit);
    input.value=state.allTestTyped||'';input.oninput=()=>{state.allTestTyped=input.value;save();};
    form.onsubmit=event=>{event.preventDefault();state.allTestTyped=input.value;state.allTestRevealed=true;save();render();};
-   form.append(button('Bỏ qua',()=>{state.allTestTyped='';state.allTestRevealed=true;save();render();}));
-  }else{
+   form.append(button('Bỏ qua',()=>{state.allTestTyped='';state.allTestRevealed=false;state.allTestSkipped=true;save();render();}));
+  }else if(revealed){
    if(state.allTestTyped)add(form,el('p',`Bạn nhập: ${state.allTestTyped}`,{class:'muted'}));
    const answer=el('div',null,{class:'answer'});add(answer,el('p','ĐÁP ÁN',{class:'eyebrow'}),el('strong',q.sourceAnswer));form.append(answer);
-   form.append(button(index===questions.length-1?'Kết thúc':'Câu tiếp theo',()=>{if(index<questions.length-1)state.allTestIndex=index+1;state.allTestTyped='';state.allTestRevealed=false;save();render();},'primary'));
   }
+  else form.append(el('p','Đã bỏ qua câu này.',{class:'muted'}));
+  if(revealed||skipped)form.append(button(index===questions.length-1?'Kết thúc':'Câu tiếp theo',()=>{if(index<questions.length-1)state.allTestIndex=index+1;state.allTestTyped='';state.allTestRevealed=false;state.allTestSkipped=false;save();render();},'primary'));
   card.append(form);
  }
  card.append(markColorButtons(state,q.sourceId,save,render));

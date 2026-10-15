@@ -1,11 +1,11 @@
 import {loadBank} from './question-repository.js?v=ui20261014m';
-import {KEY,readState,saveState,parseImport,freshState} from './state-store.js?v=ui20261015b';
+import {KEY,readState,saveState,parseImport,freshState} from './state-store.js?v=ui20261015c';
 import {el,add,button,note,download} from './render-utils.js';
 import {dashboard} from './dashboard-view.js?v=ui20261015b';
-import {studyView} from './study-controller.js?v=ui20261014m';
-import {examView,updateExamTimer} from './exam-controller.js?v=ui20261014m';
-import {markedView} from './marked-view.js?v=ui20261014m';
-import {markedTestView} from './marked-test-controller.js?v=ui20261015b';
+import {studyView} from './study-controller.js?v=ui20261015d';
+import {examView,updateExamTimer} from './exam-controller.js?v=ui20261015d';
+import {markedView} from './marked-view.js?v=ui20261015d';
+import {markedTestView} from './marked-test-controller.js?v=ui20261015d';
 const root=document.querySelector('#app');let view='home',rawRecovery=null,storageBlocked=false;
 const ctx={root,state:null,bank:null,practiceMode:'read',markedColorFilter:'all',save,render,home:()=>go('home'),study:(mode='read')=>{ctx.practiceMode=mode;go('study');},exam:()=>go('exam'),marked:()=>go('marked'),markedTest:()=>go('marked-test'),exportState,importState,reset};
 function save(){try{saveState(localStorage,ctx.state);return true;}catch(error){note('Không lưu được tiến độ trên thiết bị này.');return false;}}

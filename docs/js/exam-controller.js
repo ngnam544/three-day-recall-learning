@@ -35,8 +35,9 @@ export function examView(ctx){
  card.append(markColorButtons(state,q.sourceId,save,render));
  if(!live){
   const status=e.grades[q.sourceId]==='correct'?'Đúng':e.grades[q.sourceId]==='wrong'?'Sai':'Chưa chấm';
-  const answer=el('div',null,{class:'answer'});add(answer,el('p','ĐÁP ÁN ĐÚNG',{class:'eyebrow'}),el('strong',q.sourceAnswer));
-  add(card,el('p',`Kết quả: ${status}`,{class:e.grades[q.sourceId]==='correct'?'good-text':'wrong-text'}),answer);
+  add(card,el('p',`Kết quả: ${status}`,{class:e.grades[q.sourceId]==='correct'?'good-text':'wrong-text'}));
+  if(e.shownAnswers?.[q.sourceId]){const answer=el('div',null,{class:'answer'});add(answer,el('p','ĐÁP ÁN ĐÚNG',{class:'eyebrow'}),el('strong',q.sourceAnswer));card.append(answer);}
+  card.append(button(e.shownAnswers?.[q.sourceId]?'Ẩn đáp án':'Hiện đáp án',()=>{e.shownAnswers||={};e.shownAnswers[q.sourceId]=!e.shownAnswers[q.sourceId];save();render();}));
   if(q.reviewFlags.length)card.append(el('p',q.reviewFlags.map(f=>typeof f==='string'?f:JSON.stringify(f)).join(' · '),{class:'warning'}));
  }
  const nav=el('div',null,{class:'actions'}),prev=button('← Trước',()=>move(-1)),next=button('Tiếp →',()=>move(1));

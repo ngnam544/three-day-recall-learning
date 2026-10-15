@@ -21,6 +21,8 @@ export function markedView(ctx){
   if(q.questionVi)card.append(el('p',q.questionVi,{class:'translation'}));
   const answer=el('div',null,{class:'answer'});add(answer,el('p','ĐÁP ÁN',{class:'eyebrow'}),el('strong',q.sourceAnswer));
   if(q.answerVi)answer.append(el('p',q.answerVi,{class:'translation'}));
-  card.append(answer,markColorButtons(state,q.sourceId,save,render),button('Mở câu',()=>{state.readQuestionId=q.sourceId;ctx.study('read');},'primary'));
+  answer.hidden=true;
+  const reveal=button('Hiện đáp án',()=>{answer.hidden=!answer.hidden;reveal.textContent=answer.hidden?'Hiện đáp án':'Ẩn đáp án';});
+  card.append(reveal,answer,markColorButtons(state,q.sourceId,save,render),button('Mở câu',()=>{state.readQuestionId=q.sourceId;ctx.study('read');},'primary'));
  }
 }
